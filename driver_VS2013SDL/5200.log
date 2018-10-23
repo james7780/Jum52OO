@@ -1,0 +1,20 @@
+Jum's 5200 Emulator V1.3
+argc: 1, argv[0]: (null)
+Initialising Jum52...
+Reading config file 'jum52.cfg'...
+Loading palette file 'real.act'...
+Unable to open palette file! - Check if it's there!
+Video mode: NTSC
+Couldn't open audio: DirectSoundCreate: No audio device found
+vid address: 00456BC0
+Videomode: 15  snd_buf_size: 735
+rom: Beamrider (1984) (Activision).a52
+rom: Berzerk.BIN
+Trying to load 'Beamrider (1984) (Activision).a52', crc32=0x9BAE58DC
+Rom 'Beamrider (1984) (Activision).a52' loaded OK.
+Executing 2000000000 CPU ticks...
+rom: Beamrider (1984) (Activision).a52
+rom: Berzerk.BIN
+Trying to load 'Berzerk.BIN', crc32=0xCC740E26
+Rom 'Berzerk.BIN' loaded OK.
+Executing 2000000000 CPU ticks...
