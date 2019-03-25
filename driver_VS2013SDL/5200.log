@@ -13,8 +13,3 @@ rom: Berzerk.BIN
 Trying to load 'Beamrider (1984) (Activision).a52', crc32=0x9BAE58DC
 Rom 'Beamrider (1984) (Activision).a52' loaded OK.
 Executing 2000000000 CPU ticks...
-rom: Beamrider (1984) (Activision).a52
-rom: Berzerk.BIN
-Trying to load 'Berzerk.BIN', crc32=0xCC740E26
-Rom 'Berzerk.BIN' loaded OK.
-Executing 2000000000 CPU ticks...

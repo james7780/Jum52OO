@@ -498,12 +498,24 @@ void HostBlitVideo(void)
 			for (n = 0; n < 4; n++)
 				{
 				pLine = vid + ((y + 8) * VID_WIDTH);  // skip top 8 lines
-				for (x = 0; x < 320; x++)
+				if (3 == n && options.scanlines > 0)
 					{
-					*pScr++ = *pLine;
-					*pScr++ = *pLine;
-					*pScr++ = *pLine;
-					*pScr++ = *pLine++;
+					// JH 2018-10-23 - Handle "scanlines" option - draw every 2nd copy of the line dimmer
+					const int shift = min(options.scanlines, 3);
+					for (x = 0; x < 320; x++)
+						{
+						uint8 p = *pLine++;
+						p = (p & 0xF0) | ((p & 0x0F) >> shift);
+						*pScr++ = p; *pScr++ = p; *pScr++ = p; *pScr++ = p;
+						}
+					}
+				else
+					{
+					for (x = 0; x < 320; x++)
+						{
+						uint8 p = *pLine++;
+						*pScr++ = p; *pScr++ = p; *pScr++ = p; *pScr++ = p;
+						}
 					}
 				}
 			}
@@ -516,13 +528,27 @@ void HostBlitVideo(void)
 			for (n = 0; n < 3; n++)
 				{
 				pLine = vid + ((y + 8) * VID_WIDTH);  // skip top 8 lines
-				for (x = 0; x < 320; x++)
+				if (2 == n && options.scanlines > 0)
 					{
-					*pScr++ = *pLine;
-					*pScr++ = *pLine;
-					*pScr++ = *pLine++;
+					// JH 2018-10-23 - Handle "scanlines" option - draw every 2nd copy of the line dimmer
+					const int shift = min(options.scanlines, 3);
+					for (x = 0; x < 320; x++)
+						{
+						uint8 p = *pLine++;
+						p = (p & 0xF0) | ((p & 0x0F) >> shift);
+						*pScr++ = p; *pScr++ = p; *pScr++ = p;
+						}
+					}
+				else
+					{
+					for (x = 0; x < 320; x++)
+						{
+						uint8 p = *pLine++;
+						*pScr++ = p; *pScr++ = p; *pScr++ = p;
+						}
 					}
 				}
+			// Draw third (dimmed) copy of this line
 			}
 		}
 	else if (2 == options.scale && !options.debugmode)
@@ -530,32 +556,26 @@ void HostBlitVideo(void)
 		// 2x copy
 		for (y = 0; y < 240; y++)
 			{
-			pLine = vid + ((y + 8) * VID_WIDTH);  // skip top 8 lines
-			// Draw 1st copy of this line
-			for (x = 0; x < 320; x++)
+			for (n = 0; n < 2; n++)
 				{
-				*pScr++ = *pLine;
-				*pScr++ = *pLine++;
-				}
-			pLine = vid + ((y + 8) * VID_WIDTH);  // skip top 8 lines
-			// Draw 2nd copy of this line
-			if (options.scanlines > 0)
-				{
-				// JH 2018-10-23 - Handle "scanlines" option - draw every 2nd copy of the line dimmer
-				for (x = 0; x < 320; x++)
+				pLine = vid + ((y + 8) * VID_WIDTH);  // skip top 8 lines
+				if (1 == n && options.scanlines > 0)
 					{
-					uint8 p = *pLine++;
-					p = (p & 0xF0) | ((p & 0x0F) >> 2);
-					*pScr++ = p;
-					*pScr++ = p;
+					// JH 2018-10-23 - Handle "scanlines" option - draw every 2nd copy of the line dimmer
+					const int shift = min(options.scanlines, 3);
+					for (x = 0; x < 320; x++)
+						{
+						uint8 p = *pLine++;
+						p = (p & 0xF0) | ((p & 0x0F) >> shift);
+						*pScr++ = p; *pScr++ = p;
+						}
 					}
-				}
-			else
-				{
-				for (x = 0; x < 320; x++)
+				else
 					{
-					*pScr++ = *pLine;
-					*pScr++ = *pLine++;
+					for (x = 0; x < 320; x++)
+						{
+						*pScr++ = *pLine; *pScr++ = *pLine++;
+						}
 					}
 				}
 			}
@@ -676,8 +696,8 @@ static uint8 cook_joypos(short value)
 // Also, allow OS to grab CPU to process it's own events here if neccesary
 void HostDoEvents(void)
 {
-	CONTROLLER &cont1 = jum52.cont1;
-	CONTROLLER &cont2 = jum52.cont2;
+	CController &cont1 = jum52.controller1;
+	CController &cont2 = jum52.controller2;
 
 	// use analog mode for joystick and mouse
 	cont1.mode = CONT_MODE_DIGITAL;
@@ -711,8 +731,8 @@ void HostDoEvents(void)
 	// 2016-06-18 - Reset 5200 keypad input
 	for (int i = 0; i < 16; i++)
 		{
-		cont1.key[i] = 0;
-		cont2.key[i] = 0;
+		cont1.keys[i] = 0;
+		cont2.keys[i] = 0;
 		}
 
 	// read keyboard and fill cont1 & cont2 structures
@@ -916,23 +936,23 @@ void HostDoEvents(void)
 								put6502memory(RTC_LO, 253);
 								break;
 							case SDLK_F1:		// Start button
-								cont1.key[12] = 1;
+								cont1.keys[12] = 1;
 								break;
 							case SDLK_SLASH:	// Start button PL2
-								cont2.key[12] = 1;
+								cont2.keys[12] = 1;
 								break;
 							case SDLK_F2:		// Pause button
 							case SDLK_PAUSE:	// Pause button alternate
-								cont1.key[8] = 1;
+								cont1.keys[8] = 1;
 								break;
 							case SDLK_ASTERISK:	// Pause button PL2
-								cont2.key[8] = 1;
+								cont2.keys[8] = 1;
 								break;
 							case SDLK_F3:		// Reset button
-								cont1.key[4] = 1;
+								cont1.keys[4] = 1;
 								break;
 							case SDLK_KP_MINUS:	// Reset button PL2
-								cont2.key[4] = 1;
+								cont2.keys[4] = 1;
 								break;
 							case SDLK_ESCAPE:		// Escape to menu
 								jum52.m_running = 0;
@@ -942,19 +962,19 @@ void HostDoEvents(void)
 								if (options.debugmode == 1)
 									monitor();
 								break;
-							case SDLK_F5:		// Star key
+							case SDLK_F5:		// Star keys
 							case SDLK_MINUS:
-								cont1.key[3] = 1;
+								cont1.keys[3] = 1;
 								break;
 							case SDLK_F6:		// Hash button
 							case SDLK_EQUALS:	// Hash alternate
-								cont1.key[1] = 1;
+								cont1.keys[1] = 1;
 								break;
 							case SDLK_DELETE:		// Star key PL2
-								cont2.key[3] = 1;
+								cont2.keys[3] = 1;
 								break;
 							case SDLK_RETURN:	// Hash button PL2
-								cont2.key[1] = 1;
+								cont2.keys[1] = 1;
 								break;
 							case SDLK_F7:		// visualise sound on/off
 								//if(!visualise_sound) visualise_sound = 1;
@@ -978,34 +998,34 @@ void HostDoEvents(void)
 								SDL_SaveBMP(pBuffer, "snap.bmp");
 								break;
 							case SDLK_0:
-								cont1.key[2] = 1;
+								cont1.keys[2] = 1;
 								break;
 							case SDLK_1:
-								cont1.key[15] = 1;
+								cont1.keys[15] = 1;
 								break;
 							case SDLK_2:
-								cont1.key[14] = 1;
+								cont1.keys[14] = 1;
 								break;
 							case SDLK_3:
-								cont1.key[13] = 1;
+								cont1.keys[13] = 1;
 								break;
 							case SDLK_4:
-								cont1.key[11] = 1;
+								cont1.keys[11] = 1;
 								break;
 							case SDLK_5:
-								cont1.key[10] = 1;
+								cont1.keys[10] = 1;
 								break;
 							case SDLK_6:
-								cont1.key[9] = 1;
+								cont1.keys[9] = 1;
 								break;
 							case SDLK_7:
-								cont1.key[7] = 1;
+								cont1.keys[7] = 1;
 								break;
 							case SDLK_8:
-								cont1.key[6] = 1;
+								cont1.keys[6] = 1;
 								break;
 							case SDLK_9:
-								cont1.key[5] = 1;
+								cont1.keys[5] = 1;
 								break;
 							default:
 								break;
@@ -1063,67 +1083,67 @@ void HostDoEvents(void)
 								break;
 
 							case SDLK_F1:		// Start button
-								cont1.key[12] = 0;
+								cont1.keys[12] = 0;
 								break;
 							case SDLK_SLASH:	// Start button PL2
-								cont2.key[12] = 0;
+								cont2.keys[12] = 0;
 								break;
 							case SDLK_F2:		// Pause button
 							case SDLK_PAUSE:	// Pause button alternate
-								cont1.key[8] = 0;
+								cont1.keys[8] = 0;
 								break;
 							case SDLK_ASTERISK:	// Pause button PL2
-								cont2.key[8] = 0;
+								cont2.keys[8] = 0;
 								break;
 							case SDLK_F3:		// Reset button
-								cont1.key[4] = 0;
+								cont1.keys[4] = 0;
 								break;
 							case SDLK_KP_MINUS:	// Reset button PL2
-								cont2.key[4] = 0;
+								cont2.keys[4] = 0;
 								break;
 							case SDLK_F5:		// Star key
 							case SDLK_MINUS:
-								cont1.key[3] = 0;
+								cont1.keys[3] = 0;
 								break;
 							case SDLK_F6:		// Hash button
 							case SDLK_EQUALS:	// Hash alternate
-								cont1.key[1] = 0;
+								cont1.keys[1] = 0;
 								break;
 							case SDLK_DELETE:		// Star key PL2
-								cont2.key[3] = 0;
+								cont2.keys[3] = 0;
 								break;
 							case SDLK_RETURN:	// Hash button PL2
-								cont2.key[3] = 0;
+								cont2.keys[3] = 0;
 								break;
 							case SDLK_0:
-								cont1.key[2] = 0;
+								cont1.keys[2] = 0;
 								break;
 							case SDLK_1:
-								cont1.key[15] = 0;
+								cont1.keys[15] = 0;
 								break;
 							case SDLK_2:
-								cont1.key[14] = 0;
+								cont1.keys[14] = 0;
 								break;
 							case SDLK_3:
-								cont1.key[13] = 0;
+								cont1.keys[13] = 0;
 								break;
 							case SDLK_4:
-								cont1.key[11] = 0;
+								cont1.keys[11] = 0;
 								break;
 							case SDLK_5:
-								cont1.key[10] = 0;
+								cont1.keys[10] = 0;
 								break;
 							case SDLK_6:
-								cont1.key[9] = 0;
+								cont1.keys[9] = 0;
 								break;
 							case SDLK_7:
-								cont1.key[7] = 0;
+								cont1.keys[7] = 0;
 								break;
 							case SDLK_8:
-								cont1.key[6] = 0;
+								cont1.keys[6] = 0;
 								break;
 							case SDLK_9:
-								cont1.key[5] = 0;
+								cont1.keys[5] = 0;
 								break;
 							default:
 								break;
@@ -2216,7 +2236,7 @@ static int monitor(void)
 		// DEBUG - press TRIG0
 		if (ccmd == '0')
 			{
-			jum52.cont1.trig = 1;
+			jum52.controller1.trig = 1;
 			}
 
 		// show PM gfx
@@ -2282,8 +2302,8 @@ int main(int argc, char *argv[])
 		//set our at exit function
 		atexit(SDL_Quit);
 
-		jum52.cont1.mode = CONT_MODE_DIGITAL;
-		jum52.cont2.mode = CONT_MODE_DIGITAL;
+		jum52.controller1.mode = CONT_MODE_DIGITAL;
+		jum52.controller2.mode = CONT_MODE_DIGITAL;
 
 #ifdef _DEBUG
 		sprintf(text, "vid address: %08X\n", vid);

@@ -62,7 +62,7 @@ void DebugPrint(const char* format, ...)
 
 // global variables
 const char* emu_version = "Jum's 5200 Emulator V" JUM52_VERSION;
-//CONTROLLER cont1, cont2;
+//CONTROLLER controller1, controller2;
 char errormsg[256];
 int numSampleEvents[4] = { 0, 0, 0, 0 };
 static SampleEvent_t sampleEvent[4][MAX_SAMPLE_EVENTS];
@@ -121,6 +121,37 @@ static int num16kMappings = 0;			// number of 16k rom mappings
 #define MAPPER_POKEY    6
 
 //////////////////////////////////////////////////////////////////////////////
+// Controller - represents player's controller state
+//////////////////////////////////////////////////////////////////////////////
+CController::CController()
+{
+	Initialise();
+}
+
+// Initialise controller
+void CController::Initialise()
+{
+	mode = CONT_MODE_DIGITAL;					// digital
+	left = 0;
+	right = 0;
+	up = 0;
+	down = 0;
+	analog_h = 0;
+	analog_v = 0;
+	trig = 0;
+	side_button = 0;
+	keys[16] = ( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 );
+	last_key_still_pressed = 0;
+	// Mode
+	fake_mouse_support = 0;
+	// private
+	vpos = 0;
+	hpos = 0;
+	lastRead = 0;;
+}
+
+
+//////////////////////////////////////////////////////////////////////////////
 // CANTIC - Atari 5200 ANTIC chip functionality
 //////////////////////////////////////////////////////////////////////////////
 CANTIC::CANTIC()
@@ -132,10 +163,12 @@ CANTIC::CANTIC()
 	m_scanaddr = 0;
 	m_currentLineMode = 0;		// running current ANTIC line mode
 	m_nextDLI = 300;
+	m_nextModeLine = 0;
 	m_finished = 0;
 	m_playfieldLineCount = 0;
 	m_vscroll = FALSE;
 	m_hscroll = FALSE;
+	m_vscrollStartLine = 0;
 
 	m_nmien = 0;
 	m_nmist = 0;
@@ -151,7 +184,6 @@ void CANTIC::Initialise()
 	//bytes_per_line = 0;
 	//framesdrawn = 0;
 
-	//scanaddr = 0;
 	//stolencycles = 0;
 	m_dladdr = 0;
 	m_scanaddr = 0;
@@ -163,9 +195,6 @@ void CANTIC::Initialise()
 	m_vscroll = FALSE;
 	m_hscroll = FALSE;
 
-	//// init IRQ's
-	//m_irqst = 0xFF;                // init to no IRQ state
-	//irqen = 0x0;                // no IRQ's enabled
 	m_nmien = 0;
 	m_nmist = 0;
 }
@@ -453,7 +482,6 @@ C5200::C5200()
 		m_irqst = 0xFF;                // init to no IRQ state
 		m_irqen = 0x0;                // no IRQ's enabled
 
-
 		m_running = 0;
 }
 
@@ -464,7 +492,6 @@ void C5200::RunFast(int n)
     // NB: This was moved from 6502.c as C6502 can't access ANTIC functions (updateANTIC, pm_line_render, etc)
 		int timerTicks = n;
 		//uint8 opcode;
-		int clockTicks6502;
 
 		sprintf(errormsg, "Executing %d CPU ticks...\n", timerTicks);
 		HostLog(errormsg);
@@ -479,7 +506,7 @@ void C5200::RunFast(int n)
 		// RFB: Don't check running every opcode!
 		for (; ; ) {
 				// Execute one instruction on the CPU
-				clockTicks6502 = CPU.ExecuteInstruction();
+				int clockTicks6502 = CPU.ExecuteInstruction();
 
 				// Update line counters
 				antic.m_ticksToHSYNC -= clockTicks6502;
@@ -558,16 +585,16 @@ void C5200::initGTIA(void)
 void C5200::do_keys(void)
 {
 		// NB: 5200 will do a keyboard IRQ every 32 scanlines if a key is held down
-		CONTROLLER* which = NULL;
+		CController* which = NULL;
 
 		// "loose bit" (bit 5 of KBCODE) - fluctuates 0 or 1 randomly
 		uint8 loose_bit = (m_framesdrawn & 0x1) << 5;
 
 		switch (memory5200[CONSOL] & 0x03) {
 		case 0:
-				which = &cont1; break;
+				which = &controller1; break;
 		case 1:
-				which = &cont2; break;
+				which = &controller2; break;
 				// 3 and 4 in the future
 		default:
 				return;
@@ -578,7 +605,7 @@ void C5200::do_keys(void)
 		which->last_key_still_pressed = 0;
 
 		for (int8 i = 0; i < 16; i++) {
-				if (which->key[i]) {
+				if (which->keys[i]) {
 						/* 2016-06-18 - commented out (reset in HostDoEvents())
 									which->key[i] = 0;
 						            which->last_key_still_pressed = 0;
@@ -686,7 +713,7 @@ uint8 C5200::GTIAread(uint16 addr)
 				// LATCHING: if GRACTL bit 2 set, then if joystick trigger pressed,
 				// then TRIGn will be set to 0, and will stay that way.
 				if (!(GRACTL & 0x040)) trig[0] = 1;  // if latch off, reset trigger
-				if (cont1.trig) trig[0] = 0;
+				if (controller1.trig) trig[0] = 0;
 				return trig[0];
 				break;
 		case 0x11:	//	TRIG1
@@ -694,7 +721,7 @@ uint8 C5200::GTIAread(uint16 addr)
 				// LATCHING: if GRACTL bit 2 set, then if joystick trigger pressed,
 				// then TRIGn will be set to 0, and will stay that way.
 				if (!(GRACTL & 0x040)) trig[1] = 1;  // if latch off, reset trigger
-				if (cont2.trig) trig[1] = 0;
+				if (controller2.trig) trig[1] = 0;
 				return trig[1];
 				break;
 		case 0x12:	//	TRIG2
@@ -818,14 +845,14 @@ uint8 C5200::POKEYread(uint16 addr)
 		uint8 POKEYreg = addr & 0xf;
 
 		if (POKEYreg <= 0x7) {
-				CONTROLLER* which;
+				CController* which = NULL;
 				switch (POKEYreg) {
 				case 0:
 				case 1:
-						which = &cont1; break;
+						which = &controller1; break;
 				case 2:
 				case 3:
-						which = &cont2; break;
+						which = &controller2; break;
 						// 3 and 4 in the future
 				default:
 						return 0x80;
@@ -929,19 +956,19 @@ uint8 C5200::POKEYread(uint16 addr)
 				// (JH - implement!!!)
 				/* was:
 				skstatreg = 0;
-				if(!cont1.side_button) skstatreg |= 0x08;
-				if(!cont1.last_key_still_pressed) skstatreg |= 0x04;
+				if(!controller1.side_button) skstatreg |= 0x08;
+				if(!controller1.last_key_still_pressed) skstatreg |= 0x04;
 				return skstatreg;
 				*/
 				skstatreg = 0x0C;
 				switch(memory5200[CONSOL] & 0x03) {
 				case 0 : // controller 1
-						if(cont1.side_button) skstatreg &= 0x07;
-						if(cont1.last_key_still_pressed) skstatreg &= 0x0B;
+						if(controller1.side_button) skstatreg &= 0x07;
+						if(controller1.last_key_still_pressed) skstatreg &= 0x0B;
 						break;
 				case 1 : // controller 2
-						if(cont2.side_button) skstatreg &= 0x07;
-						if(cont2.last_key_still_pressed) skstatreg &= 0x0B;
+						if(controller2.side_button) skstatreg &= 0x07;
+						if(controller2.last_key_still_pressed) skstatreg &= 0x0B;
 						break;
 				}
 				return skstatreg;
@@ -1709,8 +1736,6 @@ int LoadConfigFile(void)
 						options.volume = atoi(value);
 						if (options.volume > 100)
 								options.volume = 100;
-						else if (options.volume < 0)
-								options.volume = 0;
 				} else if (0 == strcmp(name, "fullscreen")) {
 						// default is 0
 						if (0 == strcmp(value, "yes"))
@@ -1847,8 +1872,8 @@ int C5200::Initialise()
 		memset(voiceBuffer, 0x00, snd_buf_size);
 
 		// init controllers
-		memset(&cont1, 0, sizeof(CONTROLLER));
-		memset(&cont2, 0, sizeof(CONTROLLER));
+		//memset(&controller1, 0, sizeof(CONTROLLER));
+		//memset(&controller2, 0, sizeof(CONTROLLER));
 		pot_max_left = POT_LEFT;
 		pot_max_right = POT_RIGHT;
 
@@ -1930,10 +1955,10 @@ int C5200::Reset()
 		initGTIA();
 		clear_collision_regs();
 
-		cont1.analog_h = POT_CENTRE;
-		cont1.analog_v = POT_CENTRE;
-		cont2.analog_h = POT_CENTRE;
-		cont2.analog_v = POT_CENTRE;
+		controller1.analog_h = POT_CENTRE;
+		controller1.analog_v = POT_CENTRE;
+		controller2.analog_h = POT_CENTRE;
+		controller2.analog_v = POT_CENTRE;
 
 		return 0;
 }

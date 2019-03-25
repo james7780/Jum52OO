@@ -4,3 +4,53 @@
 
 2013-10-23 - Added "scanlines" option (for 2x scaling only) 
 
+
+
+
+Object breakdown:
+
+CPU
+ANTIC   (part of "video")
+GTIA    (part of "video")
+POKEY
+
+
+Alternative:
+Audio
+Video
+Processor (or CPU)
+Memory (or ROM and RAM)
+Controller
+Cartridge  (
+Options
+5200 class
+Target  ("host" functions)
+
+
+CPU (C6502) needs access to Memory class (to read and write from mem)
+	- via constructor
+Audio class (part of POKEY) needs access to options (ref in global.h)
+	- via global.h (extern options)
+	- OR maybe via passed parameter
+Video class needs access to memory class (ANTIC / GTIA reads)
+	- via constructor
+Memory class needs access to 5200 class (to pass on read/write)
+	- via constructor
+	- or maybe via global.h ref (extern C5200)
+Memory class will have map of which addresses need to be passed off the 5200 class.
+5200 class needs access to audio / video / controller / options / cartridge
+	- options via global.h (options)
+	- CPU / audio / video / controller / cartridge are members in 5200 class
+	- Memory is member variable
+Target class needs access to 5200 class, audio, video, controller and options
+Controller class needs access to options
+
+
+
+                                         5200
+                                           |
+                                 CPU -----/|\---CONTROLLER
+                                   |     / | \
+                                   |    /  |  \AUDIO
+                                   |   /   |
+                                 MEMORY--VIDEO        

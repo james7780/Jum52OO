@@ -30,6 +30,15 @@ static uint16 GETWORD(uint16 addr)
 
 // Contructor
 C6502::C6502()
+	: A(0),
+		X(0),
+		Y(0),
+		P(G_FLAG),		//0x20;
+		S(0xFF),
+		PC(0),
+		m_nmiBusy(FALSE),
+		m_irqBusy(FALSE),
+		m_irqPending(FALSE)
 {
 	// Set up function pointers
 	InitialiseInstructions();

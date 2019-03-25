@@ -164,9 +164,13 @@ public:
 	unsigned char m_nmist;
 };
 
-// Controllers
-typedef struct
+// Emulated controller state
+class CController
 {
+public:
+	CController::CController();
+	void Initialise();
+
 	int mode;           // 0 = digital, 1 = analog
 
 	// All values are 1 or 0, or perhaps not...
@@ -187,16 +191,15 @@ typedef struct
 	// [RESET]  [ 9 ]  [ 8 ]  [ 7 ]
 	// [PAUSE]  [ 6 ]  [ 5 ]  [ 4 ]
 	// [START]  [ 3 ]  [ 2 ]  [ 1 ]
-	int key[16];
+	int keys[16];
 	int last_key_still_pressed;
 
 	// Mode
 	int fake_mouse_support;
 
-	// Do not touch these (private data)
-	int vpos, hpos;
 	int lastRead;
-} CONTROLLER;
+	int vpos, hpos;
+};
 
 // Note: VSS uses 15/120/220 for LEFT/CENTRE/RIGHT
 #define POT_CENTRE 115
@@ -254,7 +257,7 @@ public:
 	CPOKEY pokey;
 
 	// Controllers
-	CONTROLLER cont1, cont2;
+	CController controller1, controller2;
 	int pot_max_left;
 	int pot_max_right;
 	uint8 trig[4];
