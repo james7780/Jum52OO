@@ -584,75 +584,87 @@ void C5200::initGTIA(void)
 // check keyboard and set kbcode on VBI
 void C5200::do_keys(void)
 {
-		// NB: 5200 will do a keyboard IRQ every 32 scanlines if a key is held down
-		CController* which = NULL;
+	// NB: 5200 will do a keyboard IRQ every 32 scanlines if a key is held down
+	CController* which = NULL;
 
-		// "loose bit" (bit 5 of KBCODE) - fluctuates 0 or 1 randomly
-		uint8 loose_bit = (m_framesdrawn & 0x1) << 5;
+	// "loose bit" (bit 5 of KBCODE) - fluctuates 0 or 1 randomly
+	uint8 loose_bit = (m_framesdrawn & 0x1) << 5;
 
-		switch (memory5200[CONSOL] & 0x03) {
-		case 0:
-				which = &controller1; break;
-		case 1:
-				which = &controller2; break;
-				// 3 and 4 in the future
-		default:
-				return;
-		}
+	switch (memory5200[CONSOL] & 0x03) {
+	case 0:
+		which = &controller1; break;
+	case 1:
+		which = &controller2; break;
+		// 3 and 4 in the future
+	default:
+		return;
+	}
 
-		// Default to "key not pressed"
-		memory5200[KBCODE] = loose_bit | 0x1F;
-		which->last_key_still_pressed = 0;
+	// Default to "key not pressed"
+	memory5200[KBCODE] = loose_bit | 0x1F;
+	which->last_key_still_pressed = 0;
 
-		for (int8 i = 0; i < 16; i++) {
-				if (which->keys[i]) {
-						/* 2016-06-18 - commented out (reset in HostDoEvents())
-									which->key[i] = 0;
-						            which->last_key_still_pressed = 0;
-						
-									// Don't respond to the same thing twice in a row...
-									if (i == which->lastRead)
-									{
-						                which->last_key_still_pressed = 1;      // flag key still held
-										return;
-									}
-						*/
-						if (i == which->lastRead) {
-								which->last_key_still_pressed = 1;      // flag key still held
-								return;				// Added back 2017-05-02 to fix PAUSE in games
+	for (int8 i = 0; i < 16; i++)
+		{
+		if (which->keys[i])
+			{
+			/* 2016-06-18 - commented out (reset in HostDoEvents())
+						which->key[i] = 0;
+			            which->last_key_still_pressed = 0;
+			
+						// Don't respond to the same thing twice in a row...
+						if (i == which->lastRead)
+						{
+			                which->last_key_still_pressed = 1;      // flag key still held
+							return;
 						}
+			*/
+			if (i == which->lastRead)
+				{
+				which->last_key_still_pressed = 1;      // flag key still held
+//				return;				// Added back 2017-05-02 to fix PAUSE in games
+// 2010-10-21 - Commented out again! (prevents START on some games)
+				}
 
-						which->lastRead = i;
+			which->lastRead = i;
 
-						// Write in the change
-						memory5200[KBCODE] = (i << 1) | loose_bit | 0x1;
+			// Write in the change
+			//memory5200[KBCODE] = (i << 1) | loose_bit | 0x1;
+			memory5200[KBCODE] = (i << 1) | 0x1;
+#ifdef _DEBUG
+			DebugPrint("Key press: (key %d) KBCODE = %02X\n", i, memory5200[KBCODE]);
+#endif
+			// set KEY interrupt bit (bit 6) to 0 (key int req "on")
+			m_irqst &= 0xbf;
 
-						// set KEY interrupt bit (bit 6) to 0 (key int req "on")
-						m_irqst &= 0xbf;
-
-						// check irqen and do interrupt if bit 6 set
-						if(m_irqen & 0x40) {
+			// check irqen and do interrupt if bit 6 set
+			if(m_irqen & 0x40)
+				{
 #ifdef _DEBUG
 				DebugPrint("Key interrupt (key %d) IH = %04X, IHC = %04X\n", i, memory5200[0x208] + 256 * memory5200[0x209],
-										memory5200[0x20A] + 256 * memory5200[0x20B]);
+							memory5200[0x20A] + 256 * memory5200[0x20B]);
 #endif
 				// Technically the IRQ is only triggered after the next instruction
-								CPU.DoIRQ();		//irq6502();
-						}
-
-						return;
+				CPU.DoIRQ();		//irq6502();
 				}
+
+			return;
+			}
 		}
 
-		// 2016-06-18 - Reset kbd irq if no key pressed
-		// NO - "irqst is latched, only reset by write to IRQEN"
-		//irqst |= 0x40;
+	// 2016-06-18 - Reset kbd irq if no key pressed
+	// NO - "irqst is latched, only reset by write to IRQEN"
+	//irqst |= 0x40;
 
-		// If no keys are down at all, we can write anything again
-		which->lastRead = 0xFF;
+	// If no keys are down at all, we can write anything again
+	which->lastRead = 0xFF;
 
-		// This should in theory work but in practise breaks some games?
-		//memory5200[KBCODE] = which->lastRead = 0xFF;
+	// This should in theory work but in practise breaks some games?
+	//memory5200[KBCODE] = which->lastRead = 0xFF;
+
+#ifdef _DEBUG
+//	DebugPrint("do_keys(): KBCODE = %02X\n", memory5200[KBCODE]);
+#endif
 }
 
 // Read from GTIA registers
@@ -1441,159 +1453,195 @@ void put6502memory(uint16 addr, uint8 byte)
 int C5200::loadCART(char* cartname)
 {
 	int i, mapnum, flen;
-		char sig[40];
-		unsigned long crc32;
-		FILE* pfile;
+	char sig[40];
+	unsigned long crc32;
+	FILE* pfile;
 
-		pfile = fopen(cartname, "rb");
-		if (pfile == NULL) {
-				sprintf(errormsg, "Unable to open cartridge ROM file %s - check if it's there!", cartname);
-				HostLog(errormsg);
-				return -1;
-		}
+	pfile = fopen(cartname, "rb");
+	if (pfile == NULL)
+		{
+		sprintf(errormsg, "Unable to open cartridge ROM file %s - check if it's there!", cartname);
+		HostLog(errormsg);
+		return -1;
+	}
 
-		// get file length
-		fseek(pfile, 0, SEEK_END);
-		flen = ftell(pfile);
-		rewind(pfile);
+	// get file length
+	fseek(pfile, 0, SEEK_END);
+	flen = ftell(pfile);
+	rewind(pfile);
 
-		// set POT left and right values to default
-		pot_max_left = POT_LEFT;
-		pot_max_right = POT_RIGHT;
+	// set POT left and right values to default
+	pot_max_left = POT_LEFT;
+	pot_max_right = POT_RIGHT;
 
-		// load cart into memory image
-		// Note: 5200 cartridge mapping has only a few
-		//       variations, so this mess of code below
-		//       works, and it avoids having a cartridge
-		//       config file.
-		switch (flen) {
+	// load cart into memory image
+	// Note: 5200 cartridge mapping has only a few
+	//       variations, so this mess of code below
+	//       works, and it avoids having a cartridge
+	//       config file.
+	switch (flen)
+		{
 		case 32768:	// 32k cart
-				for (i = 0; i < 32768; i++) memory5200[0x4000 + i] = fgetc(pfile);
-				// get crc32 from 32k data
-				crc32 = calc_crc32(memory5200 + 0x4000, 32768);
-				sprintf(errormsg, "Trying to load '%s', crc32=0x%08X\n", cartname, crc32);
-				HostLog(errormsg);
-				break;
+			for (i = 0; i < 32768; i++)
+				memory5200[0x4000 + i] = fgetc(pfile);
+			// get crc32 from 32k data
+			crc32 = calc_crc32(memory5200 + 0x4000, 32768);
+			sprintf(errormsg, "Trying to load '%s', crc32=0x%08X\n", cartname, crc32);
+			HostLog(errormsg);
+			break;
 		case 16384:	// 16k cart
-				// here we hack and load it twice (mapped like that?)
-				for (i = 0; i < 16384; i++) memory5200[0x4000 + i] = memory5200[0x8000 + i] = fgetc(pfile);
-
-				// get crc32 from 16k data
-				crc32 = calc_crc32(memory5200 + 0x4000, 16384);
-				sprintf(errormsg, "Trying to load '%s', crc32=0x%08X\n", cartname, crc32);
-				HostLog(errormsg);
-
-				// get cart "signature"
-				strncpy(sig, (const char*)&memory5200[0xBFE8], 20);
-				sig[20] = 0;
-				//printf("Cart signature is %s\n", sig);
-
-				// check for Moon Patrol
-				if (strcmp("@@@@@moon@patrol@@@@", sig) == 0) {
-						//printf("Mapping for Moon Patrol  (16+16)\n");
-						// already loaded correctly
-						break;
+			// here we hack and load it twice (mapped like that?)
+			for (i = 0; i < 16384; i++)
+				{
+				uint8 c = fgetc(pfile);
+				memory5200[0x4000 + i] = c;
+				memory5200[0x8000 + i] = c;
 				}
 
-				// check for SW-Arcade
-				if (strncmp("asfilmLt", sig, 8) == 0) {
-						//printf("Mapping for SW-Arcade  (16+16)\n");
-						// already loaded correctly
-						break;
-				}
+			// get crc32 from 16k data
+			crc32 = calc_crc32(memory5200 + 0x4000, 16384);
+			sprintf(errormsg, "Trying to load '%s', crc32=0x%08X\n", cartname, crc32);
+			HostLog(errormsg);
 
-				// check for Super Pacman using start vector
-				if ((memory5200[0xBFFF] == 0x92) && (memory5200[0xBFFE] == 0x55)) {
-						//printf("Mapping for Super Pacman  (16+16)\n");
-						// already loaded correctly
-						break;
-				}
+			// get cart "signature"
+			strncpy(sig, (const char*)&memory5200[0xBFE8], 20);
+			sig[20] = 0;
+			//printf("Cart signature is %s\n", sig);
 
-				// check for other carts with reset vec 8000h
-				// (eg: Space Shuttle)
-				if (memory5200[0xBFFF] == 0x80) {
-						//printf("Mapping for reset vec = 8000h  (16+16)\n");
-						// already loaded corectly
-						break;
-				}
-
-				// Tempest
-				if (memory5200[0xBFFF] == 0x81) {
-						//printf("Mapping for reset vec = 81xxh eg: Tempest (16+16)\n");
-						// already loaded corectly
-						break;
-				}
-
-
-				// PAM Diagnostics v2.0
-				// NB: this seems to prevent the emu from crashing when running
-				// pamdiag2.bin
-				if ((memory5200[0xBFFF] == 0x9F) && (memory5200[0xBFFE] == 0xD0)) {
-						//printf("Mapping for reset vector = $9FD0 (PAM DIAG 2.0)\n");
-						// move cart up by 0x1000
-						break;
-				}
-
-				// Notes: check for megamania cart
-				// 8K mirrored at 0x8000 and 0xA000, nothing from 0x4000-0x7FFF
-
-				// see if we have a 16k mapping for this cart in jum52.cfg
-				sprintf(sig, "%08X", crc32);
-				mapnum = 0; // invalid
-				for (i = 0; i < num16kMappings; i++) {
-						if (0 == strncmp(sig, p16kMaps[i].crc, 8)) {
-								mapnum = p16kMaps[i].mapping;
-								sprintf(errormsg, "Mapping %d found for crc=0x%s !\n", mapnum, sig);
-								HostLog(errormsg);
-								i = num16kMappings; // exit search
-						}
-				}
-				// if the mapping was 16+16, then break, since we have loaded it 16+16 already
-				if (1 == mapnum)
-						break;
-
-				// default to 16k+8k mapping
-				fseek(pfile, 0, SEEK_SET);
-				for(i=0; i<16384; i++) memory5200[0x6000 + i] = fgetc(pfile);
-				for(i=0; i<8192; i++) memory5200[0xA000 + i] = memory5200[0x8000 + i];
+			// check for Moon Patrol
+			if (strcmp("@@@@@moon@patrol@@@@", sig) == 0)
+				{
+				//printf("Mapping for Moon Patrol  (16+16)\n");
+				// already loaded correctly
 				break;
+				}
+
+			// check for SW-Arcade
+			if (strncmp("asfilmLt", sig, 8) == 0)
+				{
+				//printf("Mapping for SW-Arcade  (16+16)\n");
+				// already loaded correctly
+				break;
+				}
+
+			// check for Super Pacman using start vector
+			if ((memory5200[0xBFFF] == 0x92) && (memory5200[0xBFFE] == 0x55))
+				{
+				//printf("Mapping for Super Pacman  (16+16)\n");
+				// already loaded correctly
+				break;
+				}
+
+			// check for other carts with reset vec 8000h
+			// (eg: Space Shuttle)
+			if (memory5200[0xBFFF] == 0x80)
+				{
+				//printf("Mapping for reset vec = 8000h  (16+16)\n");
+				// already loaded corectly
+				break;
+				}
+
+			// Tempest
+			if (memory5200[0xBFFF] == 0x81)
+				{
+				//printf("Mapping for reset vec = 81xxh eg: Tempest (16+16)\n");
+				// already loaded corectly
+				break;
+				}
+
+			// PAM Diagnostics v2.0
+			// NB: this seems to prevent the emu from crashing when running
+			// pamdiag2.bin
+			if ((memory5200[0xBFFF] == 0x9F) && (memory5200[0xBFFE] == 0xD0))
+				{
+				//printf("Mapping for reset vector = $9FD0 (PAM DIAG 2.0)\n");
+				// move cart up by 0x1000
+				break;
+				}
+
+			// Notes: check for megamania cart
+			// 8K mirrored at 0x8000 and 0xA000, nothing from 0x4000-0x7FFF
+
+			// see if we have a 16k mapping for this cart in jum52.cfg
+			sprintf(sig, "%08X", crc32);
+			mapnum = 0; // invalid
+			for (i = 0; i < num16kMappings; i++)
+				{
+				if (0 == strncmp(sig, p16kMaps[i].crc, 8))
+					{
+					mapnum = p16kMaps[i].mapping;
+					sprintf(errormsg, "Mapping %d found for crc=0x%s !\n", mapnum, sig);
+					HostLog(errormsg);
+					i = num16kMappings; // exit search
+					}
+				}
+			// if the mapping was 16+16, then break, since we have loaded it 16+16 already
+			if (1 == mapnum)
+					break;
+
+			// default to 16k+8k mapping
+			fseek(pfile, 0, SEEK_SET);
+			for(i=0; i<16384; i++) memory5200[0x6000 + i] = fgetc(pfile);
+			for(i=0; i<8192; i++) memory5200[0xA000 + i] = memory5200[0x8000 + i];
+			break;
 		case 8192 :	// 8k cart
-				// Load mirrored 4 times
-				for(i = 0; i < 8192; i++) {
-						uint8 c = fgetc(pfile);
-						memory5200[0x4000 + i] = c;
-						memory5200[0x6000 + i] = c;
-						memory5200[0x8000 + i] = c;
-						memory5200[0xA000 + i] = c;
+			// Load mirrored 4 times
+			for(i = 0; i < 8192; i++)
+				{
+				uint8 c = fgetc(pfile);
+				memory5200[0x4000 + i] = c;
+				memory5200[0x6000 + i] = c;
+				memory5200[0x8000 + i] = c;
+				memory5200[0xA000 + i] = c;
 				}
-				// get crc32 from 8k data
-				crc32 = calc_crc32(memory5200 + 0x4000, 8192);
-				sprintf(errormsg, "8k cart load '%s', crc32=0x%08X\n", cartname, crc32);
-				HostLog(errormsg);
-				break;
+			// get crc32 from 8k data
+			crc32 = calc_crc32(memory5200 + 0x4000, 8192);
+			sprintf(errormsg, "8k cart load '%s', crc32=0x%08X\n", cartname, crc32);
+			HostLog(errormsg);
+			break;
+		case 4096 :	// 4k cart (yellow sub demo)
+			// Load mirrored 8 times
+			for(i = 0; i < 4096; i++)
+				{
+				uint8 c = fgetc(pfile);
+				memory5200[0x4000 + i] = c;
+				memory5200[0x5000 + i] = c;
+				memory5200[0x6000 + i] = c;
+				memory5200[0x7000 + i] = c;
+				memory5200[0x8000 + i] = c;
+				memory5200[0x9000 + i] = c;
+				memory5200[0xA000 + i] = c;
+				memory5200[0xB000 + i] = c;
+				}
+			// get crc32 from 4k data
+			crc32 = calc_crc32(memory5200 + 0x4000, 4096);
+			sprintf(errormsg, "4k cart load '%s', crc32=0x%08X\n", cartname, crc32);
+			HostLog(errormsg);
+			break;
 		default:		// oops!
-				// these rom dumps are strange, because some carts are 8K, yet
-				// all the dumps are either 16K or 32K!
-				sprintf(errormsg, "Cartridge ROM size not 16K or 32K. Unable to load.");
-				return -1;
-				break;
+			// these rom dumps are strange, because some carts are 8K, yet
+			// all the dumps are either 16K or 32K!
+			sprintf(errormsg, "Cartridge ROM size not 16K or 32K. Unable to load.");
+			return -1;
+			break;
 		}
 
-		// check for Pengo
-		if (strncmp("pengo", (const char*)(memory5200 + 0xBFEF), 8) == 0) {
-				HostLog("Pengo detected! Switching controller to Pengo mode.\n");
-				pot_max_left = 70;
-				pot_max_right = 170;
+	// check for Pengo
+	if (strncmp("pengo", (const char*)(memory5200 + 0xBFEF), 8) == 0)
+		{
+		HostLog("Pengo detected! Switching controller to Pengo mode.\n");
+		pot_max_left = 70;
+		pot_max_right = 170;
 		}
 
-		// is cartridge PAL-compatible?
-		// (doesn't seem to work!)
-		//if(memory5200[0xBFE7] == 0x02) printf("Cart is PAL-compatible!\n");
-		//else printf("Cart is *not* PAL-compatible.\n");
+	// is cartridge PAL-compatible?
+	// (doesn't seem to work!)
+	//if(memory5200[0xBFE7] == 0x02) printf("Cart is PAL-compatible!\n");
+	//else printf("Cart is *not* PAL-compatible.\n");
 
-		fclose(pfile);
+	fclose(pfile);
 
-		return 0;
+	return 0;
 }
 
 // load in a new palette from .act palette file

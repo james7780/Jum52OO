@@ -181,7 +181,6 @@ int C5200::pf_line_render(void)
 
 	static int currentLineMode = 0;		// running current ANTIC line mode
 
-
 	stolencycles = 0;
 
 	const int vcount = antic.m_vcount;

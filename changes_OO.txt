@@ -1,3 +1,5 @@
+2020-09-29 - Load 4k carts (yellow sub demo). Mirrored 8 times.
+
 2013-10 - Refactored C code into C++ classes representing the object hierarchy
 - Reduced global vars, reduced scope of vars/objects
 - Moved LoadState/SaveState to host.cpp (these are host functions really)

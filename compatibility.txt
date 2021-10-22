@@ -1,0 +1,72 @@
+Activision Decathlon,No,Activision
+Astrochase,No,First Star,Collision issues
+Ballblazer,No,Lucas,Start not detected
+Beamrider,Yes,Activision
+Berzerk,Yes,Atari
+Blaster,Yes,Atari
+Blueprint,?,CBS
+Bounty Bob strikes Back,No,Big Five
+Bristles,?,First Star
+Buck Rogers,No,Sega,Hangs on start
+Centipede,Yes,Atari
+Choplifter,No,Atari,Crashes after title screen
+Congo Bongo,Yes,Sega
+Countermeasure,Yes,Atari
+Defender,Yes,Atari
+Diag cart,No,Atari,Start not detected
+Dig Dug,Yes,Atari
+Dreadnaught Factor,No,Activision,Cannot start
+Final Legacy,Yes,Atari
+Frogger,Yes,Parker
+Frogger II,Yes,Parker
+Galaxian,No,Atari,Bottom half of screen messed up
+Gorf,Yes,CBS,Strange control
+Gremlins,Yes,Atari
+Gyruss,No,Parker,Can't get beyond start screen
+HERO,Yes,Activision
+James Bond 007,No,Parker,Can't start
+Joust,Yes,Atari
+Jr. Pac-man,Yes,Atari
+Jungle Hunt,Yes,Atari
+K-Razy Shootout,Yes,CBS
+Kaboom!,No,Activision,Can't start
+Kangaroo,Yes,Atari
+Keystone Kapers,Yes,Activision
+Mario Bros,Yes,Atari
+Megamania,Yes,Activision
+Meteorites,No,Electra,Black screen
+Millipede,Yes,Atari
+Miner 2049er,No,Big Five,Black screen
+Missile Command,Yes,Atari
+Montezuma Revenge,Yes,Parker
+Moon Patrol,No,Atari,Stuck in DEMO mode
+Mountain King,Yes,CBS
+Mr. Do's Castle,No,Parker,Crashes
+Ms. Pac-Man,Yes,Atari
+Pac-man,Yes,Atari
+Pengo,Yes,Atari
+Pitfall II,Yes,Activision
+Pitfall,No,Activision,Can't start
+Pole Position,Yes,Atari,Graphical glitches
+Popeye,Yes,Parker
+Q*Bert,Yes,Parker
+Qix,Yes,Atari
+Quintana Roo,No,Sunrise,Can't start
+Rescue on Fractalus,No,Lucas,Can't start
+River Raid,Yes,Activision
+Robotron 2084,Yes,Atari
+Scamble,No,?,Collision issue
+Space Dungeon,Yes,Atari
+Space Invaders,Yes,Atari
+Space Shuttle,No,Activision,Can't start (START triggers other keypresses?)
+Star Raiders,No,Atari,Crashes when switching screen
+Star Trek,Yes,Sega
+Star Wars: Death Star Battle,Yes,Parker
+Star Wars: Arcade,No,Parker
+Super Breakout,No,Atari,Collision issue
+Super Cobra,Yes,Parker
+Vanguard,Yes,Atari
+Wizard of Wor,No,CBS,Black screen
+Zaxxon,Yes,Sega
+Zenji,Yes,Activision
+Zone Ranger,Yes,Activision

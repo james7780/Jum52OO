@@ -1,0 +1,35 @@
+Reading keypad(s):
+
+1. 5200 will do a keyboard IRQ every 32 scanlines if a key is held down (?)
+	- bit 6 of IRQST set to 0
+	- IRQST is latched, only reset by write to IRQEN
+	- Do interrupt (after next instruction) if IRQEN & 0x40
+2. Bit 0 and 1 of CONSOL select which of 4 keypads are being read
+	- Bit 2 enables/disables the joystick pots (enable = 1)
+3. KBCODE bits 1 to 4 hold the "scan code" from the selected keypad
+	- Bit 6 is the "top" fire button state (also causes BRK key interrupt)
+	- Bit 0 is always 1 ?
+	- "loose bit" (bit 5 of KBCODE) - fluctuates 0 or 1 randomly
+	- If no keys pressed, then KBCODE should return 0x1F or 0x3F
+ 
+5. Pitfall (and others) wait for KBCODE = 0x19 to start ((scan code 0xc << 1) | 1)
+
+
+From https://atarihq.com/danb/files/52analog.pdf:
+"The top side buttons on the selected controller act like the 400/800 shift keys and also cause a BREAK-key interrupt, if that’s enabled. Bit 0 of SKCTL, the
+debounce enable bit need not be set in the 5200.
+
+A couple of notes about the 5200 keypad:
+1. Not only is the debounce enable not needed, if you do enable it you won’t be
+able to read any keycodes back from the POKEY.
+2. Since the low bit and high bit of the keyboard scan counter are not used any
+keypress will actually return 4 different keycodes during each scan cycle. For
+this reason it’s always a good idea to mask bits 1-4 before using them.
+3. SKCTL bit 2 (last key still pressed) does not behave as expected on the 5200.
+I have not yet determined it’s actual behavior.
+4. SKCTL bit 1 enables the keyboard scanning. Note that this also
+enabled/disables the POT scanning. "
+
+
+
+Trap illegal mem map accesses (for debugging games that don't work)

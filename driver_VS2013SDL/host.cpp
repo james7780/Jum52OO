@@ -2198,9 +2198,12 @@ static int monitor(void)
 			{
 			getstring("Enter address to run to:");
 			n = sscanf(string, "%x", &new_addr);
-			while (CPU.PC != new_addr)
+			if (n > 0 && n < 0xFFFF)
 				{
-				jum52.RunDebug(1);
+				while (CPU.PC != new_addr)
+					{
+					jum52.RunDebug(1);
+					}
 				}
 			}
 		// check for disassemble remote command
