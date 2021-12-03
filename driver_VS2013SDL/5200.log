@@ -5,11 +5,1588 @@ Reading config file 'jum52.cfg'...
 Loading palette file 'real.act'...
 Unable to open palette file! - Check if it's there!
 Video mode: NTSC
-Couldn't open audio: DirectSoundCreate: No audio device found
 vid address: 00456BC0
 Videomode: 15  snd_buf_size: 735
+rom: 5200menu.bin
+rom: Activision Decathlon, The (1984) (Activision).a52
+rom: AE (1984) (Atari) (Prototype).bin
+rom: Asteroids (1983) (Atari) (Prototype) [!].bin
+rom: Astro Chase (1982) (Parker Bros-First Star Software).bin
+rom: Atari Diagnostics V2.3 (1983) (Atari).bin
+rom: Ballblazer (1984) (Atari-Lucasfilm Games).bin
+rom: Barroom Baseball (1983) (Atari) (Prototype).a52
+rom: Battlezone (1983) (Atari) (Prototype).bin
 rom: Beamrider (1984) (Activision).a52
+rom: Berzerk (1983) (Atari).bin
 rom: Berzerk.BIN
-Trying to load 'Beamrider (1984) (Activision).a52', crc32=0x9BAE58DC
-Rom 'Beamrider (1984) (Activision).a52' loaded OK.
+rom: Black Belt (1982) (Atari) (Prototype).bin
+rom: Blaster (Prototype).bin
+rom: Blueprint (1982) (CBS).a52
+rom: Boogie Demo (1982) (Atari) (Prototype).bin
+rom: Bounty Bob Strikes Back (Merged) (Big Five Software) (U).a52
+rom: Buck Rogers - Planet of Zoom (1983) (Sega).bin
+rom: Centipede (1982) (Atari).bin
+rom: Choplifter (1984) (Atari).a52
+rom: Congo Bongo (1983) (Sega).bin
+rom: Countermeasure (1983) (Atari).bin
+rom: Defender (1982) (Atari).a52
+rom: Diagnostic 10.bin
+rom: Diagnostic 11.bin
+rom: Diagnostic 20.bin
+rom: Diagnostic 23.bin
+rom: Dig Dug (1983) (Atari).bin
+rom: Dreadnaught Factor, The (1983) (Atari).a52
+rom: Final Legacy (1982) (Atari) (Prototype).bin
+rom: Frisky Tom (1982) (Atari) (Prototype).bin
+rom: Frogger (1983) (Parker Bros).a52
+rom: Frogger 2 - Threedeep! (1984) (Parker Bros).bin
+rom: galaga_demo.bin
+rom: Galaxian (1982) (Atari).a52
+rom: Galaxian.bin
+rom: Gorf (1982) (CBS).a52
+rom: Gremlins (1984) (Atari).bin
+rom: Gyruss (1982) (Parker Bros).bin
+rom: H.E.R.O. (1984) (Activision).a52
+rom: James Bond 007 (1983) (Parker Bros).bin
+rom: Joust (1984) (Atari).bin
+rom: Jr Pac-Man (1984) (Atari).a52
+rom: Jungle Hunt (1983) (Atari).bin
+rom: K-razy Shoot-Out (1982) (CBS).a52
+rom: KABOOM! (1983) (Activision).a52
+rom: Kangaroo (1982) (Atari).bin
+rom: Keystone Kapers (1984) (Activision).a52
+rom: Last Starfighter, The (1984) (Atari).a52
+rom: Looney Tunes Hotel (1983) (Atari) (Prototype).a52
+rom: Mario Brothers (1983) (Atari).bin
+rom: Meebzork (1983) (Atari).a52
+rom: Megamania (1983) (Activision).a52
+rom: Meteorites (1983) (Electra Concepts).bin
+rom: Microgammon SB (1983) (Atari) (Prototype).a52
+rom: Millipede (1984) (Atari).a52
+rom: Miner 2049 (1983) (Big Five Software).a52
+rom: Miniature Golf (1983) (Atari).a52
+rom: Missile Command (1983) (Atari).a52
+rom: Montezuma's Revenge (1984) (Parker Bros).a52
+rom: Moon Patrol (1983) (Atari).bin
+rom: Mountain King (1984) (Sunrise Software).a52
+rom: Mr. Do's Castle (1984) (Parker Bros).a52
+rom: Ms. Pac-Man (1982) (Atari).bin
+rom: Pac-Man (1982) (Atari).bin
+rom: PAM SALT V1.02 (1982) (Atari).a52
+rom: Pengo (1983) (Atari).bin
+rom: Pete's Diagnostics (1982) (Atari).a52
+rom: Pitfall II - The Lost Caverns (1984) (Activision).a52
+rom: Pitfall II - The Lost Caverns.bin
+rom: Pitfall! (1982) (Activision).a52
+rom: Pole Position (1983) (Atari).bin
+rom: Popeye (1983) (Parker Bros).bin
+rom: Q-bert (1983) (Parker Bros).a52
+rom: QIX (1982) (Atari).a52
+rom: Quest for Quintana Roo (1984) (Sunrise Software).a52
+rom: Realsports Baseball (1983) (Atari).a52
+rom: Realsports Basketball (1983) (Atari).bin
+rom: Realsports Football (1982) (Atari).bin
+rom: Realsports Soccer (1982) (Atari).bin
+rom: Realsports Tennis (1982) (Atari).bin
+rom: Rescue on Fractalus (1984) (Atari-Lucasfilm Games).bin
+rom: River Raid (1983) (Activision).a52
+rom: Roadrunner (1982) (Atari).a52
+rom: Robotron + Millipede.bin
+rom: Robotron 2084 (1983) (Atari).a52
+rom: scramble.bin
+rom: Space Dungeon (1983) (Atari).bin
+rom: Space Invaders (1982) (Atari).a52
+rom: Space Shuttle - A Journey Into Space (1983) (Activision).bin
+rom: spitfire.bin
+rom: Sport Goofy (1983) (Atari) (Prototype).a52
+rom: Star Raiders (1982) (Atari).bin
+rom: Star Trek - Strategic Operations Simulator (1983) (Sega).a52
+rom: Star Wars - ROTJ - Death Star Battle (1983) (Parker Bros).a52
+rom: Star Wars - The Arcade Game (1983) (Parker Bros).bin
+rom: Stargate (1984) (Atari).a52
+rom: Super Breakout (1982) (Atari).a52
+rom: Super Cobra (1983) (Parker Bros).a52
+rom: Super Pac-Man (1982) (Atari) (Prototype).bin
+rom: Tempest (1983) (Atari) (Prototype) [!].bin
+rom: Track and Field (1984) (Atari).a52
+rom: Vanguard (1983) (Atari).bin
+rom: Wizard of Wor (1982) (CBS).a52
+rom: Xari Arena (1983) (Atari) (Prototype).bin
+rom: Xevious (1984) (Atari) (Prototype).bin
+rom: Yellow Submarine Demo (1982) (Atari) (Prototype).bin
+rom: Zaxxon (1984) (Sega).bin
+rom: Zenji (1984) (Atari).a52
+rom: Zone Ranger (1984) (Activision).a52
+Trying to load 'Activision Decathlon, The (1984) (Activision).a52', crc32=0xF43E7CD0
+Rom 'Activision Decathlon, The (1984) (Activision).a52' loaded OK.
+Executing 2000000000 CPU ticks...
+rom: 5200menu.bin
+rom: Activision Decathlon, The (1984) (Activision).a52
+rom: AE (1984) (Atari) (Prototype).bin
+rom: Asteroids (1983) (Atari) (Prototype) [!].bin
+rom: Astro Chase (1982) (Parker Bros-First Star Software).bin
+rom: Atari Diagnostics V2.3 (1983) (Atari).bin
+rom: Ballblazer (1984) (Atari-Lucasfilm Games).bin
+rom: Barroom Baseball (1983) (Atari) (Prototype).a52
+rom: Battlezone (1983) (Atari) (Prototype).bin
+rom: Beamrider (1984) (Activision).a52
+rom: Berzerk (1983) (Atari).bin
+rom: Berzerk.BIN
+rom: Black Belt (1982) (Atari) (Prototype).bin
+rom: Blaster (Prototype).bin
+rom: Blueprint (1982) (CBS).a52
+rom: Boogie Demo (1982) (Atari) (Prototype).bin
+rom: Bounty Bob Strikes Back (Merged) (Big Five Software) (U).a52
+rom: Buck Rogers - Planet of Zoom (1983) (Sega).bin
+rom: Centipede (1982) (Atari).bin
+rom: Choplifter (1984) (Atari).a52
+rom: Congo Bongo (1983) (Sega).bin
+rom: Countermeasure (1983) (Atari).bin
+rom: Defender (1982) (Atari).a52
+rom: Diagnostic 10.bin
+rom: Diagnostic 11.bin
+rom: Diagnostic 20.bin
+rom: Diagnostic 23.bin
+rom: Dig Dug (1983) (Atari).bin
+rom: Dreadnaught Factor, The (1983) (Atari).a52
+rom: Final Legacy (1982) (Atari) (Prototype).bin
+rom: Frisky Tom (1982) (Atari) (Prototype).bin
+rom: Frogger (1983) (Parker Bros).a52
+rom: Frogger 2 - Threedeep! (1984) (Parker Bros).bin
+rom: galaga_demo.bin
+rom: Galaxian (1982) (Atari).a52
+rom: Galaxian.bin
+rom: Gorf (1982) (CBS).a52
+rom: Gremlins (1984) (Atari).bin
+rom: Gyruss (1982) (Parker Bros).bin
+rom: H.E.R.O. (1984) (Activision).a52
+rom: James Bond 007 (1983) (Parker Bros).bin
+rom: Joust (1984) (Atari).bin
+rom: Jr Pac-Man (1984) (Atari).a52
+rom: Jungle Hunt (1983) (Atari).bin
+rom: K-razy Shoot-Out (1982) (CBS).a52
+rom: KABOOM! (1983) (Activision).a52
+rom: Kangaroo (1982) (Atari).bin
+rom: Keystone Kapers (1984) (Activision).a52
+rom: Last Starfighter, The (1984) (Atari).a52
+rom: Looney Tunes Hotel (1983) (Atari) (Prototype).a52
+rom: Mario Brothers (1983) (Atari).bin
+rom: Meebzork (1983) (Atari).a52
+rom: Megamania (1983) (Activision).a52
+rom: Meteorites (1983) (Electra Concepts).bin
+rom: Microgammon SB (1983) (Atari) (Prototype).a52
+rom: Millipede (1984) (Atari).a52
+rom: Miner 2049 (1983) (Big Five Software).a52
+rom: Miniature Golf (1983) (Atari).a52
+rom: Missile Command (1983) (Atari).a52
+rom: Montezuma's Revenge (1984) (Parker Bros).a52
+rom: Moon Patrol (1983) (Atari).bin
+rom: Mountain King (1984) (Sunrise Software).a52
+rom: Mr. Do's Castle (1984) (Parker Bros).a52
+rom: Ms. Pac-Man (1982) (Atari).bin
+rom: Pac-Man (1982) (Atari).bin
+rom: PAM SALT V1.02 (1982) (Atari).a52
+rom: Pengo (1983) (Atari).bin
+rom: Pete's Diagnostics (1982) (Atari).a52
+rom: Pitfall II - The Lost Caverns (1984) (Activision).a52
+rom: Pitfall II - The Lost Caverns.bin
+rom: Pitfall! (1982) (Activision).a52
+rom: Pole Position (1983) (Atari).bin
+rom: Popeye (1983) (Parker Bros).bin
+rom: Q-bert (1983) (Parker Bros).a52
+rom: QIX (1982) (Atari).a52
+rom: Quest for Quintana Roo (1984) (Sunrise Software).a52
+rom: Realsports Baseball (1983) (Atari).a52
+rom: Realsports Basketball (1983) (Atari).bin
+rom: Realsports Football (1982) (Atari).bin
+rom: Realsports Soccer (1982) (Atari).bin
+rom: Realsports Tennis (1982) (Atari).bin
+rom: Rescue on Fractalus (1984) (Atari-Lucasfilm Games).bin
+rom: River Raid (1983) (Activision).a52
+rom: Roadrunner (1982) (Atari).a52
+rom: Robotron + Millipede.bin
+rom: Robotron 2084 (1983) (Atari).a52
+rom: scramble.bin
+rom: Space Dungeon (1983) (Atari).bin
+rom: Space Invaders (1982) (Atari).a52
+rom: Space Shuttle - A Journey Into Space (1983) (Activision).bin
+rom: spitfire.bin
+rom: Sport Goofy (1983) (Atari) (Prototype).a52
+rom: Star Raiders (1982) (Atari).bin
+rom: Star Trek - Strategic Operations Simulator (1983) (Sega).a52
+rom: Star Wars - ROTJ - Death Star Battle (1983) (Parker Bros).a52
+rom: Star Wars - The Arcade Game (1983) (Parker Bros).bin
+rom: Stargate (1984) (Atari).a52
+rom: Super Breakout (1982) (Atari).a52
+rom: Super Cobra (1983) (Parker Bros).a52
+rom: Super Pac-Man (1982) (Atari) (Prototype).bin
+rom: Tempest (1983) (Atari) (Prototype) [!].bin
+rom: Track and Field (1984) (Atari).a52
+rom: Vanguard (1983) (Atari).bin
+rom: Wizard of Wor (1982) (CBS).a52
+rom: Xari Arena (1983) (Atari) (Prototype).bin
+rom: Xevious (1984) (Atari) (Prototype).bin
+rom: Yellow Submarine Demo (1982) (Atari) (Prototype).bin
+rom: Zaxxon (1984) (Sega).bin
+rom: Zenji (1984) (Atari).a52
+rom: Zone Ranger (1984) (Activision).a52
+Trying to load 'Ballblazer (1984) (Atari-Lucasfilm Games).bin', crc32=0xDEF2A207
+Rom 'Ballblazer (1984) (Atari-Lucasfilm Games).bin' loaded OK.
+Executing 2000000000 CPU ticks...
+rom: 5200menu.bin
+rom: Activision Decathlon, The (1984) (Activision).a52
+rom: AE (1984) (Atari) (Prototype).bin
+rom: Asteroids (1983) (Atari) (Prototype) [!].bin
+rom: Astro Chase (1982) (Parker Bros-First Star Software).bin
+rom: Atari Diagnostics V2.3 (1983) (Atari).bin
+rom: Ballblazer (1984) (Atari-Lucasfilm Games).bin
+rom: Barroom Baseball (1983) (Atari) (Prototype).a52
+rom: Battlezone (1983) (Atari) (Prototype).bin
+rom: Beamrider (1984) (Activision).a52
+rom: Berzerk (1983) (Atari).bin
+rom: Berzerk.BIN
+rom: Black Belt (1982) (Atari) (Prototype).bin
+rom: Blaster (Prototype).bin
+rom: Blueprint (1982) (CBS).a52
+rom: Boogie Demo (1982) (Atari) (Prototype).bin
+rom: Bounty Bob Strikes Back (Merged) (Big Five Software) (U).a52
+rom: Buck Rogers - Planet of Zoom (1983) (Sega).bin
+rom: Centipede (1982) (Atari).bin
+rom: Choplifter (1984) (Atari).a52
+rom: Congo Bongo (1983) (Sega).bin
+rom: Countermeasure (1983) (Atari).bin
+rom: Defender (1982) (Atari).a52
+rom: Diagnostic 10.bin
+rom: Diagnostic 11.bin
+rom: Diagnostic 20.bin
+rom: Diagnostic 23.bin
+rom: Dig Dug (1983) (Atari).bin
+rom: Dreadnaught Factor, The (1983) (Atari).a52
+rom: Final Legacy (1982) (Atari) (Prototype).bin
+rom: Frisky Tom (1982) (Atari) (Prototype).bin
+rom: Frogger (1983) (Parker Bros).a52
+rom: Frogger 2 - Threedeep! (1984) (Parker Bros).bin
+rom: galaga_demo.bin
+rom: Galaxian (1982) (Atari).a52
+rom: Galaxian.bin
+rom: Gorf (1982) (CBS).a52
+rom: Gremlins (1984) (Atari).bin
+rom: Gyruss (1982) (Parker Bros).bin
+rom: H.E.R.O. (1984) (Activision).a52
+rom: James Bond 007 (1983) (Parker Bros).bin
+rom: Joust (1984) (Atari).bin
+rom: Jr Pac-Man (1984) (Atari).a52
+rom: Jungle Hunt (1983) (Atari).bin
+rom: K-razy Shoot-Out (1982) (CBS).a52
+rom: KABOOM! (1983) (Activision).a52
+rom: Kangaroo (1982) (Atari).bin
+rom: Keystone Kapers (1984) (Activision).a52
+rom: Last Starfighter, The (1984) (Atari).a52
+rom: Looney Tunes Hotel (1983) (Atari) (Prototype).a52
+rom: Mario Brothers (1983) (Atari).bin
+rom: Meebzork (1983) (Atari).a52
+rom: Megamania (1983) (Activision).a52
+rom: Meteorites (1983) (Electra Concepts).bin
+rom: Microgammon SB (1983) (Atari) (Prototype).a52
+rom: Millipede (1984) (Atari).a52
+rom: Miner 2049 (1983) (Big Five Software).a52
+rom: Miniature Golf (1983) (Atari).a52
+rom: Missile Command (1983) (Atari).a52
+rom: Montezuma's Revenge (1984) (Parker Bros).a52
+rom: Moon Patrol (1983) (Atari).bin
+rom: Mountain King (1984) (Sunrise Software).a52
+rom: Mr. Do's Castle (1984) (Parker Bros).a52
+rom: Ms. Pac-Man (1982) (Atari).bin
+rom: Pac-Man (1982) (Atari).bin
+rom: PAM SALT V1.02 (1982) (Atari).a52
+rom: Pengo (1983) (Atari).bin
+rom: Pete's Diagnostics (1982) (Atari).a52
+rom: Pitfall II - The Lost Caverns (1984) (Activision).a52
+rom: Pitfall II - The Lost Caverns.bin
+rom: Pitfall! (1982) (Activision).a52
+rom: Pole Position (1983) (Atari).bin
+rom: Popeye (1983) (Parker Bros).bin
+rom: Q-bert (1983) (Parker Bros).a52
+rom: QIX (1982) (Atari).a52
+rom: Quest for Quintana Roo (1984) (Sunrise Software).a52
+rom: Realsports Baseball (1983) (Atari).a52
+rom: Realsports Basketball (1983) (Atari).bin
+rom: Realsports Football (1982) (Atari).bin
+rom: Realsports Soccer (1982) (Atari).bin
+rom: Realsports Tennis (1982) (Atari).bin
+rom: Rescue on Fractalus (1984) (Atari-Lucasfilm Games).bin
+rom: River Raid (1983) (Activision).a52
+rom: Roadrunner (1982) (Atari).a52
+rom: Robotron + Millipede.bin
+rom: Robotron 2084 (1983) (Atari).a52
+rom: scramble.bin
+rom: Space Dungeon (1983) (Atari).bin
+rom: Space Invaders (1982) (Atari).a52
+rom: Space Shuttle - A Journey Into Space (1983) (Activision).bin
+rom: spitfire.bin
+rom: Sport Goofy (1983) (Atari) (Prototype).a52
+rom: Star Raiders (1982) (Atari).bin
+rom: Star Trek - Strategic Operations Simulator (1983) (Sega).a52
+rom: Star Wars - ROTJ - Death Star Battle (1983) (Parker Bros).a52
+rom: Star Wars - The Arcade Game (1983) (Parker Bros).bin
+rom: Stargate (1984) (Atari).a52
+rom: Super Breakout (1982) (Atari).a52
+rom: Super Cobra (1983) (Parker Bros).a52
+rom: Super Pac-Man (1982) (Atari) (Prototype).bin
+rom: Tempest (1983) (Atari) (Prototype) [!].bin
+rom: Track and Field (1984) (Atari).a52
+rom: Vanguard (1983) (Atari).bin
+rom: Wizard of Wor (1982) (CBS).a52
+rom: Xari Arena (1983) (Atari) (Prototype).bin
+rom: Xevious (1984) (Atari) (Prototype).bin
+rom: Yellow Submarine Demo (1982) (Atari) (Prototype).bin
+rom: Zaxxon (1984) (Sega).bin
+rom: Zenji (1984) (Atari).a52
+rom: Zone Ranger (1984) (Activision).a52
+Trying to load 'Buck Rogers - Planet of Zoom (1983) (Sega).bin', crc32=0x04807705
+Rom 'Buck Rogers - Planet of Zoom (1983) (Sega).bin' loaded OK.
+Executing 2000000000 CPU ticks...
+rom: 5200menu.bin
+rom: Activision Decathlon, The (1984) (Activision).a52
+rom: AE (1984) (Atari) (Prototype).bin
+rom: Asteroids (1983) (Atari) (Prototype) [!].bin
+rom: Astro Chase (1982) (Parker Bros-First Star Software).bin
+rom: Atari Diagnostics V2.3 (1983) (Atari).bin
+rom: Ballblazer (1984) (Atari-Lucasfilm Games).bin
+rom: Barroom Baseball (1983) (Atari) (Prototype).a52
+rom: Battlezone (1983) (Atari) (Prototype).bin
+rom: Beamrider (1984) (Activision).a52
+rom: Berzerk (1983) (Atari).bin
+rom: Berzerk.BIN
+rom: Black Belt (1982) (Atari) (Prototype).bin
+rom: Blaster (Prototype).bin
+rom: Blueprint (1982) (CBS).a52
+rom: Boogie Demo (1982) (Atari) (Prototype).bin
+rom: Bounty Bob Strikes Back (Merged) (Big Five Software) (U).a52
+rom: Buck Rogers - Planet of Zoom (1983) (Sega).bin
+rom: Centipede (1982) (Atari).bin
+rom: Choplifter (1984) (Atari).a52
+rom: Congo Bongo (1983) (Sega).bin
+rom: Countermeasure (1983) (Atari).bin
+rom: Defender (1982) (Atari).a52
+rom: Diagnostic 10.bin
+rom: Diagnostic 11.bin
+rom: Diagnostic 20.bin
+rom: Diagnostic 23.bin
+rom: Dig Dug (1983) (Atari).bin
+rom: Dreadnaught Factor, The (1983) (Atari).a52
+rom: Final Legacy (1982) (Atari) (Prototype).bin
+rom: Frisky Tom (1982) (Atari) (Prototype).bin
+rom: Frogger (1983) (Parker Bros).a52
+rom: Frogger 2 - Threedeep! (1984) (Parker Bros).bin
+rom: galaga_demo.bin
+rom: Galaxian (1982) (Atari).a52
+rom: Galaxian.bin
+rom: Gorf (1982) (CBS).a52
+rom: Gremlins (1984) (Atari).bin
+rom: Gyruss (1982) (Parker Bros).bin
+rom: H.E.R.O. (1984) (Activision).a52
+rom: James Bond 007 (1983) (Parker Bros).bin
+rom: Joust (1984) (Atari).bin
+rom: Jr Pac-Man (1984) (Atari).a52
+rom: Jungle Hunt (1983) (Atari).bin
+rom: K-razy Shoot-Out (1982) (CBS).a52
+rom: KABOOM! (1983) (Activision).a52
+rom: Kangaroo (1982) (Atari).bin
+rom: Keystone Kapers (1984) (Activision).a52
+rom: Last Starfighter, The (1984) (Atari).a52
+rom: Looney Tunes Hotel (1983) (Atari) (Prototype).a52
+rom: Mario Brothers (1983) (Atari).bin
+rom: Meebzork (1983) (Atari).a52
+rom: Megamania (1983) (Activision).a52
+rom: Meteorites (1983) (Electra Concepts).bin
+rom: Microgammon SB (1983) (Atari) (Prototype).a52
+rom: Millipede (1984) (Atari).a52
+rom: Miner 2049 (1983) (Big Five Software).a52
+rom: Miniature Golf (1983) (Atari).a52
+rom: Missile Command (1983) (Atari).a52
+rom: Montezuma's Revenge (1984) (Parker Bros).a52
+rom: Moon Patrol (1983) (Atari).bin
+rom: Mountain King (1984) (Sunrise Software).a52
+rom: Mr. Do's Castle (1984) (Parker Bros).a52
+rom: Ms. Pac-Man (1982) (Atari).bin
+rom: Pac-Man (1982) (Atari).bin
+rom: PAM SALT V1.02 (1982) (Atari).a52
+rom: Pengo (1983) (Atari).bin
+rom: Pete's Diagnostics (1982) (Atari).a52
+rom: Pitfall II - The Lost Caverns (1984) (Activision).a52
+rom: Pitfall II - The Lost Caverns.bin
+rom: Pitfall! (1982) (Activision).a52
+rom: Pole Position (1983) (Atari).bin
+rom: Popeye (1983) (Parker Bros).bin
+rom: Q-bert (1983) (Parker Bros).a52
+rom: QIX (1982) (Atari).a52
+rom: Quest for Quintana Roo (1984) (Sunrise Software).a52
+rom: Realsports Baseball (1983) (Atari).a52
+rom: Realsports Basketball (1983) (Atari).bin
+rom: Realsports Football (1982) (Atari).bin
+rom: Realsports Soccer (1982) (Atari).bin
+rom: Realsports Tennis (1982) (Atari).bin
+rom: Rescue on Fractalus (1984) (Atari-Lucasfilm Games).bin
+rom: River Raid (1983) (Activision).a52
+rom: Roadrunner (1982) (Atari).a52
+rom: Robotron + Millipede.bin
+rom: Robotron 2084 (1983) (Atari).a52
+rom: scramble.bin
+rom: Space Dungeon (1983) (Atari).bin
+rom: Space Invaders (1982) (Atari).a52
+rom: Space Shuttle - A Journey Into Space (1983) (Activision).bin
+rom: spitfire.bin
+rom: Sport Goofy (1983) (Atari) (Prototype).a52
+rom: Star Raiders (1982) (Atari).bin
+rom: Star Trek - Strategic Operations Simulator (1983) (Sega).a52
+rom: Star Wars - ROTJ - Death Star Battle (1983) (Parker Bros).a52
+rom: Star Wars - The Arcade Game (1983) (Parker Bros).bin
+rom: Stargate (1984) (Atari).a52
+rom: Super Breakout (1982) (Atari).a52
+rom: Super Cobra (1983) (Parker Bros).a52
+rom: Super Pac-Man (1982) (Atari) (Prototype).bin
+rom: Tempest (1983) (Atari) (Prototype) [!].bin
+rom: Track and Field (1984) (Atari).a52
+rom: Vanguard (1983) (Atari).bin
+rom: Wizard of Wor (1982) (CBS).a52
+rom: Xari Arena (1983) (Atari) (Prototype).bin
+rom: Xevious (1984) (Atari) (Prototype).bin
+rom: Yellow Submarine Demo (1982) (Atari) (Prototype).bin
+rom: Zaxxon (1984) (Sega).bin
+rom: Zenji (1984) (Atari).a52
+rom: Zone Ranger (1984) (Activision).a52
+Trying to load 'Choplifter (1984) (Atari).a52', crc32=0x9AD53BBC
+Rom 'Choplifter (1984) (Atari).a52' loaded OK.
+Executing 2000000000 CPU ticks...
+rom: 5200menu.bin
+rom: Activision Decathlon, The (1984) (Activision).a52
+rom: AE (1984) (Atari) (Prototype).bin
+rom: Asteroids (1983) (Atari) (Prototype) [!].bin
+rom: Astro Chase (1982) (Parker Bros-First Star Software).bin
+rom: Atari Diagnostics V2.3 (1983) (Atari).bin
+rom: Ballblazer (1984) (Atari-Lucasfilm Games).bin
+rom: Barroom Baseball (1983) (Atari) (Prototype).a52
+rom: Battlezone (1983) (Atari) (Prototype).bin
+rom: Beamrider (1984) (Activision).a52
+rom: Berzerk (1983) (Atari).bin
+rom: Berzerk.BIN
+rom: Black Belt (1982) (Atari) (Prototype).bin
+rom: Blaster (Prototype).bin
+rom: Blueprint (1982) (CBS).a52
+rom: Boogie Demo (1982) (Atari) (Prototype).bin
+rom: Bounty Bob Strikes Back (Merged) (Big Five Software) (U).a52
+rom: Buck Rogers - Planet of Zoom (1983) (Sega).bin
+rom: Centipede (1982) (Atari).bin
+rom: Choplifter (1984) (Atari).a52
+rom: Congo Bongo (1983) (Sega).bin
+rom: Countermeasure (1983) (Atari).bin
+rom: Defender (1982) (Atari).a52
+rom: Diagnostic 10.bin
+rom: Diagnostic 11.bin
+rom: Diagnostic 20.bin
+rom: Diagnostic 23.bin
+rom: Dig Dug (1983) (Atari).bin
+rom: Dreadnaught Factor, The (1983) (Atari).a52
+rom: Final Legacy (1982) (Atari) (Prototype).bin
+rom: Frisky Tom (1982) (Atari) (Prototype).bin
+rom: Frogger (1983) (Parker Bros).a52
+rom: Frogger 2 - Threedeep! (1984) (Parker Bros).bin
+rom: galaga_demo.bin
+rom: Galaxian (1982) (Atari).a52
+rom: Galaxian.bin
+rom: Gorf (1982) (CBS).a52
+rom: Gremlins (1984) (Atari).bin
+rom: Gyruss (1982) (Parker Bros).bin
+rom: H.E.R.O. (1984) (Activision).a52
+rom: James Bond 007 (1983) (Parker Bros).bin
+rom: Joust (1984) (Atari).bin
+rom: Jr Pac-Man (1984) (Atari).a52
+rom: Jungle Hunt (1983) (Atari).bin
+rom: K-razy Shoot-Out (1982) (CBS).a52
+rom: KABOOM! (1983) (Activision).a52
+rom: Kangaroo (1982) (Atari).bin
+rom: Keystone Kapers (1984) (Activision).a52
+rom: Last Starfighter, The (1984) (Atari).a52
+rom: Looney Tunes Hotel (1983) (Atari) (Prototype).a52
+rom: Mario Brothers (1983) (Atari).bin
+rom: Meebzork (1983) (Atari).a52
+rom: Megamania (1983) (Activision).a52
+rom: Meteorites (1983) (Electra Concepts).bin
+rom: Microgammon SB (1983) (Atari) (Prototype).a52
+rom: Millipede (1984) (Atari).a52
+rom: Miner 2049 (1983) (Big Five Software).a52
+rom: Miniature Golf (1983) (Atari).a52
+rom: Missile Command (1983) (Atari).a52
+rom: Montezuma's Revenge (1984) (Parker Bros).a52
+rom: Moon Patrol (1983) (Atari).bin
+rom: Mountain King (1984) (Sunrise Software).a52
+rom: Mr. Do's Castle (1984) (Parker Bros).a52
+rom: Ms. Pac-Man (1982) (Atari).bin
+rom: Pac-Man (1982) (Atari).bin
+rom: PAM SALT V1.02 (1982) (Atari).a52
+rom: Pengo (1983) (Atari).bin
+rom: Pete's Diagnostics (1982) (Atari).a52
+rom: Pitfall II - The Lost Caverns (1984) (Activision).a52
+rom: Pitfall II - The Lost Caverns.bin
+rom: Pitfall! (1982) (Activision).a52
+rom: Pole Position (1983) (Atari).bin
+rom: Popeye (1983) (Parker Bros).bin
+rom: Q-bert (1983) (Parker Bros).a52
+rom: QIX (1982) (Atari).a52
+rom: Quest for Quintana Roo (1984) (Sunrise Software).a52
+rom: Realsports Baseball (1983) (Atari).a52
+rom: Realsports Basketball (1983) (Atari).bin
+rom: Realsports Football (1982) (Atari).bin
+rom: Realsports Soccer (1982) (Atari).bin
+rom: Realsports Tennis (1982) (Atari).bin
+rom: Rescue on Fractalus (1984) (Atari-Lucasfilm Games).bin
+rom: River Raid (1983) (Activision).a52
+rom: Roadrunner (1982) (Atari).a52
+rom: Robotron + Millipede.bin
+rom: Robotron 2084 (1983) (Atari).a52
+rom: scramble.bin
+rom: Space Dungeon (1983) (Atari).bin
+rom: Space Invaders (1982) (Atari).a52
+rom: Space Shuttle - A Journey Into Space (1983) (Activision).bin
+rom: spitfire.bin
+rom: Sport Goofy (1983) (Atari) (Prototype).a52
+rom: Star Raiders (1982) (Atari).bin
+rom: Star Trek - Strategic Operations Simulator (1983) (Sega).a52
+rom: Star Wars - ROTJ - Death Star Battle (1983) (Parker Bros).a52
+rom: Star Wars - The Arcade Game (1983) (Parker Bros).bin
+rom: Stargate (1984) (Atari).a52
+rom: Super Breakout (1982) (Atari).a52
+rom: Super Cobra (1983) (Parker Bros).a52
+rom: Super Pac-Man (1982) (Atari) (Prototype).bin
+rom: Tempest (1983) (Atari) (Prototype) [!].bin
+rom: Track and Field (1984) (Atari).a52
+rom: Vanguard (1983) (Atari).bin
+rom: Wizard of Wor (1982) (CBS).a52
+rom: Xari Arena (1983) (Atari) (Prototype).bin
+rom: Xevious (1984) (Atari) (Prototype).bin
+rom: Yellow Submarine Demo (1982) (Atari) (Prototype).bin
+rom: Zaxxon (1984) (Sega).bin
+rom: Zenji (1984) (Atari).a52
+rom: Zone Ranger (1984) (Activision).a52
+Trying to load 'Diagnostic 23.bin', crc32=0xCE07D9AD
+Rom 'Diagnostic 23.bin' loaded OK.
+Executing 2000000000 CPU ticks...
+rom: 5200menu.bin
+rom: Activision Decathlon, The (1984) (Activision).a52
+rom: AE (1984) (Atari) (Prototype).bin
+rom: Asteroids (1983) (Atari) (Prototype) [!].bin
+rom: Astro Chase (1982) (Parker Bros-First Star Software).bin
+rom: Atari Diagnostics V2.3 (1983) (Atari).bin
+rom: Ballblazer (1984) (Atari-Lucasfilm Games).bin
+rom: Barroom Baseball (1983) (Atari) (Prototype).a52
+rom: Battlezone (1983) (Atari) (Prototype).bin
+rom: Beamrider (1984) (Activision).a52
+rom: Berzerk (1983) (Atari).bin
+rom: Berzerk.BIN
+rom: Black Belt (1982) (Atari) (Prototype).bin
+rom: Blaster (Prototype).bin
+rom: Blueprint (1982) (CBS).a52
+rom: Boogie Demo (1982) (Atari) (Prototype).bin
+rom: Bounty Bob Strikes Back (Merged) (Big Five Software) (U).a52
+rom: Buck Rogers - Planet of Zoom (1983) (Sega).bin
+rom: Centipede (1982) (Atari).bin
+rom: Choplifter (1984) (Atari).a52
+rom: Congo Bongo (1983) (Sega).bin
+rom: Countermeasure (1983) (Atari).bin
+rom: Defender (1982) (Atari).a52
+rom: Diagnostic 10.bin
+rom: Diagnostic 11.bin
+rom: Diagnostic 20.bin
+rom: Diagnostic 23.bin
+rom: Dig Dug (1983) (Atari).bin
+rom: Dreadnaught Factor, The (1983) (Atari).a52
+rom: Final Legacy (1982) (Atari) (Prototype).bin
+rom: Frisky Tom (1982) (Atari) (Prototype).bin
+rom: Frogger (1983) (Parker Bros).a52
+rom: Frogger 2 - Threedeep! (1984) (Parker Bros).bin
+rom: galaga_demo.bin
+rom: Galaxian (1982) (Atari).a52
+rom: Galaxian.bin
+rom: Gorf (1982) (CBS).a52
+rom: Gremlins (1984) (Atari).bin
+rom: Gyruss (1982) (Parker Bros).bin
+rom: H.E.R.O. (1984) (Activision).a52
+rom: James Bond 007 (1983) (Parker Bros).bin
+rom: Joust (1984) (Atari).bin
+rom: Jr Pac-Man (1984) (Atari).a52
+rom: Jungle Hunt (1983) (Atari).bin
+rom: K-razy Shoot-Out (1982) (CBS).a52
+rom: KABOOM! (1983) (Activision).a52
+rom: Kangaroo (1982) (Atari).bin
+rom: Keystone Kapers (1984) (Activision).a52
+rom: Last Starfighter, The (1984) (Atari).a52
+rom: Looney Tunes Hotel (1983) (Atari) (Prototype).a52
+rom: Mario Brothers (1983) (Atari).bin
+rom: Meebzork (1983) (Atari).a52
+rom: Megamania (1983) (Activision).a52
+rom: Meteorites (1983) (Electra Concepts).bin
+rom: Microgammon SB (1983) (Atari) (Prototype).a52
+rom: Millipede (1984) (Atari).a52
+rom: Miner 2049 (1983) (Big Five Software).a52
+rom: Miniature Golf (1983) (Atari).a52
+rom: Missile Command (1983) (Atari).a52
+rom: Montezuma's Revenge (1984) (Parker Bros).a52
+rom: Moon Patrol (1983) (Atari).bin
+rom: Mountain King (1984) (Sunrise Software).a52
+rom: Mr. Do's Castle (1984) (Parker Bros).a52
+rom: Ms. Pac-Man (1982) (Atari).bin
+rom: Pac-Man (1982) (Atari).bin
+rom: PAM SALT V1.02 (1982) (Atari).a52
+rom: Pengo (1983) (Atari).bin
+rom: Pete's Diagnostics (1982) (Atari).a52
+rom: Pitfall II - The Lost Caverns (1984) (Activision).a52
+rom: Pitfall II - The Lost Caverns.bin
+rom: Pitfall! (1982) (Activision).a52
+rom: Pole Position (1983) (Atari).bin
+rom: Popeye (1983) (Parker Bros).bin
+rom: Q-bert (1983) (Parker Bros).a52
+rom: QIX (1982) (Atari).a52
+rom: Quest for Quintana Roo (1984) (Sunrise Software).a52
+rom: Realsports Baseball (1983) (Atari).a52
+rom: Realsports Basketball (1983) (Atari).bin
+rom: Realsports Football (1982) (Atari).bin
+rom: Realsports Soccer (1982) (Atari).bin
+rom: Realsports Tennis (1982) (Atari).bin
+rom: Rescue on Fractalus (1984) (Atari-Lucasfilm Games).bin
+rom: River Raid (1983) (Activision).a52
+rom: Roadrunner (1982) (Atari).a52
+rom: Robotron + Millipede.bin
+rom: Robotron 2084 (1983) (Atari).a52
+rom: scramble.bin
+rom: Space Dungeon (1983) (Atari).bin
+rom: Space Invaders (1982) (Atari).a52
+rom: Space Shuttle - A Journey Into Space (1983) (Activision).bin
+rom: spitfire.bin
+rom: Sport Goofy (1983) (Atari) (Prototype).a52
+rom: Star Raiders (1982) (Atari).bin
+rom: Star Trek - Strategic Operations Simulator (1983) (Sega).a52
+rom: Star Wars - ROTJ - Death Star Battle (1983) (Parker Bros).a52
+rom: Star Wars - The Arcade Game (1983) (Parker Bros).bin
+rom: Stargate (1984) (Atari).a52
+rom: Super Breakout (1982) (Atari).a52
+rom: Super Cobra (1983) (Parker Bros).a52
+rom: Super Pac-Man (1982) (Atari) (Prototype).bin
+rom: Tempest (1983) (Atari) (Prototype) [!].bin
+rom: Track and Field (1984) (Atari).a52
+rom: Vanguard (1983) (Atari).bin
+rom: Wizard of Wor (1982) (CBS).a52
+rom: Xari Arena (1983) (Atari) (Prototype).bin
+rom: Xevious (1984) (Atari) (Prototype).bin
+rom: Yellow Submarine Demo (1982) (Atari) (Prototype).bin
+rom: Zaxxon (1984) (Sega).bin
+rom: Zenji (1984) (Atari).a52
+rom: Zone Ranger (1984) (Activision).a52
+8k cart load 'Dreadnaught Factor, The (1983) (Atari).a52', crc32=0x460DEF2D
+Rom 'Dreadnaught Factor, The (1983) (Atari).a52' loaded OK.
+Executing 2000000000 CPU ticks...
+rom: 5200menu.bin
+rom: Activision Decathlon, The (1984) (Activision).a52
+rom: AE (1984) (Atari) (Prototype).bin
+rom: Asteroids (1983) (Atari) (Prototype) [!].bin
+rom: Astro Chase (1982) (Parker Bros-First Star Software).bin
+rom: Atari Diagnostics V2.3 (1983) (Atari).bin
+rom: Ballblazer (1984) (Atari-Lucasfilm Games).bin
+rom: Barroom Baseball (1983) (Atari) (Prototype).a52
+rom: Battlezone (1983) (Atari) (Prototype).bin
+rom: Beamrider (1984) (Activision).a52
+rom: Berzerk (1983) (Atari).bin
+rom: Berzerk.BIN
+rom: Black Belt (1982) (Atari) (Prototype).bin
+rom: Blaster (Prototype).bin
+rom: Blueprint (1982) (CBS).a52
+rom: Boogie Demo (1982) (Atari) (Prototype).bin
+rom: Bounty Bob Strikes Back (Merged) (Big Five Software) (U).a52
+rom: Buck Rogers - Planet of Zoom (1983) (Sega).bin
+rom: Centipede (1982) (Atari).bin
+rom: Choplifter (1984) (Atari).a52
+rom: Congo Bongo (1983) (Sega).bin
+rom: Countermeasure (1983) (Atari).bin
+rom: Defender (1982) (Atari).a52
+rom: Diagnostic 10.bin
+rom: Diagnostic 11.bin
+rom: Diagnostic 20.bin
+rom: Diagnostic 23.bin
+rom: Dig Dug (1983) (Atari).bin
+rom: Dreadnaught Factor, The (1983) (Atari).a52
+rom: Final Legacy (1982) (Atari) (Prototype).bin
+rom: Frisky Tom (1982) (Atari) (Prototype).bin
+rom: Frogger (1983) (Parker Bros).a52
+rom: Frogger 2 - Threedeep! (1984) (Parker Bros).bin
+rom: galaga_demo.bin
+rom: Galaxian (1982) (Atari).a52
+rom: Galaxian.bin
+rom: Gorf (1982) (CBS).a52
+rom: Gremlins (1984) (Atari).bin
+rom: Gyruss (1982) (Parker Bros).bin
+rom: H.E.R.O. (1984) (Activision).a52
+rom: James Bond 007 (1983) (Parker Bros).bin
+rom: Joust (1984) (Atari).bin
+rom: Jr Pac-Man (1984) (Atari).a52
+rom: Jungle Hunt (1983) (Atari).bin
+rom: K-razy Shoot-Out (1982) (CBS).a52
+rom: KABOOM! (1983) (Activision).a52
+rom: Kangaroo (1982) (Atari).bin
+rom: Keystone Kapers (1984) (Activision).a52
+rom: Last Starfighter, The (1984) (Atari).a52
+rom: Looney Tunes Hotel (1983) (Atari) (Prototype).a52
+rom: Mario Brothers (1983) (Atari).bin
+rom: Meebzork (1983) (Atari).a52
+rom: Megamania (1983) (Activision).a52
+rom: Meteorites (1983) (Electra Concepts).bin
+rom: Microgammon SB (1983) (Atari) (Prototype).a52
+rom: Millipede (1984) (Atari).a52
+rom: Miner 2049 (1983) (Big Five Software).a52
+rom: Miniature Golf (1983) (Atari).a52
+rom: Missile Command (1983) (Atari).a52
+rom: Montezuma's Revenge (1984) (Parker Bros).a52
+rom: Moon Patrol (1983) (Atari).bin
+rom: Mountain King (1984) (Sunrise Software).a52
+rom: Mr. Do's Castle (1984) (Parker Bros).a52
+rom: Ms. Pac-Man (1982) (Atari).bin
+rom: Pac-Man (1982) (Atari).bin
+rom: PAM SALT V1.02 (1982) (Atari).a52
+rom: Pengo (1983) (Atari).bin
+rom: Pete's Diagnostics (1982) (Atari).a52
+rom: Pitfall II - The Lost Caverns (1984) (Activision).a52
+rom: Pitfall II - The Lost Caverns.bin
+rom: Pitfall! (1982) (Activision).a52
+rom: Pole Position (1983) (Atari).bin
+rom: Popeye (1983) (Parker Bros).bin
+rom: Q-bert (1983) (Parker Bros).a52
+rom: QIX (1982) (Atari).a52
+rom: Quest for Quintana Roo (1984) (Sunrise Software).a52
+rom: Realsports Baseball (1983) (Atari).a52
+rom: Realsports Basketball (1983) (Atari).bin
+rom: Realsports Football (1982) (Atari).bin
+rom: Realsports Soccer (1982) (Atari).bin
+rom: Realsports Tennis (1982) (Atari).bin
+rom: Rescue on Fractalus (1984) (Atari-Lucasfilm Games).bin
+rom: River Raid (1983) (Activision).a52
+rom: Roadrunner (1982) (Atari).a52
+rom: Robotron + Millipede.bin
+rom: Robotron 2084 (1983) (Atari).a52
+rom: scramble.bin
+rom: Space Dungeon (1983) (Atari).bin
+rom: Space Invaders (1982) (Atari).a52
+rom: Space Shuttle - A Journey Into Space (1983) (Activision).bin
+rom: spitfire.bin
+rom: Sport Goofy (1983) (Atari) (Prototype).a52
+rom: Star Raiders (1982) (Atari).bin
+rom: Star Trek - Strategic Operations Simulator (1983) (Sega).a52
+rom: Star Wars - ROTJ - Death Star Battle (1983) (Parker Bros).a52
+rom: Star Wars - The Arcade Game (1983) (Parker Bros).bin
+rom: Stargate (1984) (Atari).a52
+rom: Super Breakout (1982) (Atari).a52
+rom: Super Cobra (1983) (Parker Bros).a52
+rom: Super Pac-Man (1982) (Atari) (Prototype).bin
+rom: Tempest (1983) (Atari) (Prototype) [!].bin
+rom: Track and Field (1984) (Atari).a52
+rom: Vanguard (1983) (Atari).bin
+rom: Wizard of Wor (1982) (CBS).a52
+rom: Xari Arena (1983) (Atari) (Prototype).bin
+rom: Xevious (1984) (Atari) (Prototype).bin
+rom: Yellow Submarine Demo (1982) (Atari) (Prototype).bin
+rom: Zaxxon (1984) (Sega).bin
+rom: Zenji (1984) (Atari).a52
+rom: Zone Ranger (1984) (Activision).a52
+Trying to load 'Gyruss (1982) (Parker Bros).bin', crc32=0xCFD4A7F9
+Rom 'Gyruss (1982) (Parker Bros).bin' loaded OK.
+Executing 2000000000 CPU ticks...
+rom: 5200menu.bin
+rom: Activision Decathlon, The (1984) (Activision).a52
+rom: AE (1984) (Atari) (Prototype).bin
+rom: Asteroids (1983) (Atari) (Prototype) [!].bin
+rom: Astro Chase (1982) (Parker Bros-First Star Software).bin
+rom: Atari Diagnostics V2.3 (1983) (Atari).bin
+rom: Ballblazer (1984) (Atari-Lucasfilm Games).bin
+rom: Barroom Baseball (1983) (Atari) (Prototype).a52
+rom: Battlezone (1983) (Atari) (Prototype).bin
+rom: Beamrider (1984) (Activision).a52
+rom: Berzerk (1983) (Atari).bin
+rom: Berzerk.BIN
+rom: Black Belt (1982) (Atari) (Prototype).bin
+rom: Blaster (Prototype).bin
+rom: Blueprint (1982) (CBS).a52
+rom: Boogie Demo (1982) (Atari) (Prototype).bin
+rom: Bounty Bob Strikes Back (Merged) (Big Five Software) (U).a52
+rom: Buck Rogers - Planet of Zoom (1983) (Sega).bin
+rom: Centipede (1982) (Atari).bin
+rom: Choplifter (1984) (Atari).a52
+rom: Congo Bongo (1983) (Sega).bin
+rom: Countermeasure (1983) (Atari).bin
+rom: Defender (1982) (Atari).a52
+rom: Diagnostic 10.bin
+rom: Diagnostic 11.bin
+rom: Diagnostic 20.bin
+rom: Diagnostic 23.bin
+rom: Dig Dug (1983) (Atari).bin
+rom: Dreadnaught Factor, The (1983) (Atari).a52
+rom: Final Legacy (1982) (Atari) (Prototype).bin
+rom: Frisky Tom (1982) (Atari) (Prototype).bin
+rom: Frogger (1983) (Parker Bros).a52
+rom: Frogger 2 - Threedeep! (1984) (Parker Bros).bin
+rom: galaga_demo.bin
+rom: Galaxian (1982) (Atari).a52
+rom: Galaxian.bin
+rom: Gorf (1982) (CBS).a52
+rom: Gremlins (1984) (Atari).bin
+rom: Gyruss (1982) (Parker Bros).bin
+rom: H.E.R.O. (1984) (Activision).a52
+rom: James Bond 007 (1983) (Parker Bros).bin
+rom: Joust (1984) (Atari).bin
+rom: Jr Pac-Man (1984) (Atari).a52
+rom: Jungle Hunt (1983) (Atari).bin
+rom: K-razy Shoot-Out (1982) (CBS).a52
+rom: KABOOM! (1983) (Activision).a52
+rom: Kangaroo (1982) (Atari).bin
+rom: Keystone Kapers (1984) (Activision).a52
+rom: Last Starfighter, The (1984) (Atari).a52
+rom: Looney Tunes Hotel (1983) (Atari) (Prototype).a52
+rom: Mario Brothers (1983) (Atari).bin
+rom: Meebzork (1983) (Atari).a52
+rom: Megamania (1983) (Activision).a52
+rom: Meteorites (1983) (Electra Concepts).bin
+rom: Microgammon SB (1983) (Atari) (Prototype).a52
+rom: Millipede (1984) (Atari).a52
+rom: Miner 2049 (1983) (Big Five Software).a52
+rom: Miniature Golf (1983) (Atari).a52
+rom: Missile Command (1983) (Atari).a52
+rom: Montezuma's Revenge (1984) (Parker Bros).a52
+rom: Moon Patrol (1983) (Atari).bin
+rom: Mountain King (1984) (Sunrise Software).a52
+rom: Mr. Do's Castle (1984) (Parker Bros).a52
+rom: Ms. Pac-Man (1982) (Atari).bin
+rom: Pac-Man (1982) (Atari).bin
+rom: PAM SALT V1.02 (1982) (Atari).a52
+rom: Pengo (1983) (Atari).bin
+rom: Pete's Diagnostics (1982) (Atari).a52
+rom: Pitfall II - The Lost Caverns (1984) (Activision).a52
+rom: Pitfall II - The Lost Caverns.bin
+rom: Pitfall! (1982) (Activision).a52
+rom: Pole Position (1983) (Atari).bin
+rom: Popeye (1983) (Parker Bros).bin
+rom: Q-bert (1983) (Parker Bros).a52
+rom: QIX (1982) (Atari).a52
+rom: Quest for Quintana Roo (1984) (Sunrise Software).a52
+rom: Realsports Baseball (1983) (Atari).a52
+rom: Realsports Basketball (1983) (Atari).bin
+rom: Realsports Football (1982) (Atari).bin
+rom: Realsports Soccer (1982) (Atari).bin
+rom: Realsports Tennis (1982) (Atari).bin
+rom: Rescue on Fractalus (1984) (Atari-Lucasfilm Games).bin
+rom: River Raid (1983) (Activision).a52
+rom: Roadrunner (1982) (Atari).a52
+rom: Robotron + Millipede.bin
+rom: Robotron 2084 (1983) (Atari).a52
+rom: scramble.bin
+rom: Space Dungeon (1983) (Atari).bin
+rom: Space Invaders (1982) (Atari).a52
+rom: Space Shuttle - A Journey Into Space (1983) (Activision).bin
+rom: spitfire.bin
+rom: Sport Goofy (1983) (Atari) (Prototype).a52
+rom: Star Raiders (1982) (Atari).bin
+rom: Star Trek - Strategic Operations Simulator (1983) (Sega).a52
+rom: Star Wars - ROTJ - Death Star Battle (1983) (Parker Bros).a52
+rom: Star Wars - The Arcade Game (1983) (Parker Bros).bin
+rom: Stargate (1984) (Atari).a52
+rom: Super Breakout (1982) (Atari).a52
+rom: Super Cobra (1983) (Parker Bros).a52
+rom: Super Pac-Man (1982) (Atari) (Prototype).bin
+rom: Tempest (1983) (Atari) (Prototype) [!].bin
+rom: Track and Field (1984) (Atari).a52
+rom: Vanguard (1983) (Atari).bin
+rom: Wizard of Wor (1982) (CBS).a52
+rom: Xari Arena (1983) (Atari) (Prototype).bin
+rom: Xevious (1984) (Atari) (Prototype).bin
+rom: Yellow Submarine Demo (1982) (Atari) (Prototype).bin
+rom: Zaxxon (1984) (Sega).bin
+rom: Zenji (1984) (Atari).a52
+rom: Zone Ranger (1984) (Activision).a52
+Trying to load 'James Bond 007 (1983) (Parker Bros).bin', crc32=0xD9AE4518
+Rom 'James Bond 007 (1983) (Parker Bros).bin' loaded OK.
+Executing 2000000000 CPU ticks...
+rom: 5200menu.bin
+rom: Activision Decathlon, The (1984) (Activision).a52
+rom: AE (1984) (Atari) (Prototype).bin
+rom: Asteroids (1983) (Atari) (Prototype) [!].bin
+rom: Astro Chase (1982) (Parker Bros-First Star Software).bin
+rom: Atari Diagnostics V2.3 (1983) (Atari).bin
+rom: Ballblazer (1984) (Atari-Lucasfilm Games).bin
+rom: Barroom Baseball (1983) (Atari) (Prototype).a52
+rom: Battlezone (1983) (Atari) (Prototype).bin
+rom: Beamrider (1984) (Activision).a52
+rom: Berzerk (1983) (Atari).bin
+rom: Berzerk.BIN
+rom: Black Belt (1982) (Atari) (Prototype).bin
+rom: Blaster (Prototype).bin
+rom: Blueprint (1982) (CBS).a52
+rom: Boogie Demo (1982) (Atari) (Prototype).bin
+rom: Bounty Bob Strikes Back (Merged) (Big Five Software) (U).a52
+rom: Buck Rogers - Planet of Zoom (1983) (Sega).bin
+rom: Centipede (1982) (Atari).bin
+rom: Choplifter (1984) (Atari).a52
+rom: Congo Bongo (1983) (Sega).bin
+rom: Countermeasure (1983) (Atari).bin
+rom: Defender (1982) (Atari).a52
+rom: Diagnostic 10.bin
+rom: Diagnostic 11.bin
+rom: Diagnostic 20.bin
+rom: Diagnostic 23.bin
+rom: Dig Dug (1983) (Atari).bin
+rom: Dreadnaught Factor, The (1983) (Atari).a52
+rom: Final Legacy (1982) (Atari) (Prototype).bin
+rom: Frisky Tom (1982) (Atari) (Prototype).bin
+rom: Frogger (1983) (Parker Bros).a52
+rom: Frogger 2 - Threedeep! (1984) (Parker Bros).bin
+rom: galaga_demo.bin
+rom: Galaxian (1982) (Atari).a52
+rom: Galaxian.bin
+rom: Gorf (1982) (CBS).a52
+rom: Gremlins (1984) (Atari).bin
+rom: Gyruss (1982) (Parker Bros).bin
+rom: H.E.R.O. (1984) (Activision).a52
+rom: James Bond 007 (1983) (Parker Bros).bin
+rom: Joust (1984) (Atari).bin
+rom: Jr Pac-Man (1984) (Atari).a52
+rom: Jungle Hunt (1983) (Atari).bin
+rom: K-razy Shoot-Out (1982) (CBS).a52
+rom: KABOOM! (1983) (Activision).a52
+rom: Kangaroo (1982) (Atari).bin
+rom: Keystone Kapers (1984) (Activision).a52
+rom: Last Starfighter, The (1984) (Atari).a52
+rom: Looney Tunes Hotel (1983) (Atari) (Prototype).a52
+rom: Mario Brothers (1983) (Atari).bin
+rom: Meebzork (1983) (Atari).a52
+rom: Megamania (1983) (Activision).a52
+rom: Meteorites (1983) (Electra Concepts).bin
+rom: Microgammon SB (1983) (Atari) (Prototype).a52
+rom: Millipede (1984) (Atari).a52
+rom: Miner 2049 (1983) (Big Five Software).a52
+rom: Miniature Golf (1983) (Atari).a52
+rom: Missile Command (1983) (Atari).a52
+rom: Montezuma's Revenge (1984) (Parker Bros).a52
+rom: Moon Patrol (1983) (Atari).bin
+rom: Mountain King (1984) (Sunrise Software).a52
+rom: Mr. Do's Castle (1984) (Parker Bros).a52
+rom: Ms. Pac-Man (1982) (Atari).bin
+rom: Pac-Man (1982) (Atari).bin
+rom: PAM SALT V1.02 (1982) (Atari).a52
+rom: Pengo (1983) (Atari).bin
+rom: Pete's Diagnostics (1982) (Atari).a52
+rom: Pitfall II - The Lost Caverns (1984) (Activision).a52
+rom: Pitfall II - The Lost Caverns.bin
+rom: Pitfall! (1982) (Activision).a52
+rom: Pole Position (1983) (Atari).bin
+rom: Popeye (1983) (Parker Bros).bin
+rom: Q-bert (1983) (Parker Bros).a52
+rom: QIX (1982) (Atari).a52
+rom: Quest for Quintana Roo (1984) (Sunrise Software).a52
+rom: Realsports Baseball (1983) (Atari).a52
+rom: Realsports Basketball (1983) (Atari).bin
+rom: Realsports Football (1982) (Atari).bin
+rom: Realsports Soccer (1982) (Atari).bin
+rom: Realsports Tennis (1982) (Atari).bin
+rom: Rescue on Fractalus (1984) (Atari-Lucasfilm Games).bin
+rom: River Raid (1983) (Activision).a52
+rom: Roadrunner (1982) (Atari).a52
+rom: Robotron + Millipede.bin
+rom: Robotron 2084 (1983) (Atari).a52
+rom: scramble.bin
+rom: Space Dungeon (1983) (Atari).bin
+rom: Space Invaders (1982) (Atari).a52
+rom: Space Shuttle - A Journey Into Space (1983) (Activision).bin
+rom: spitfire.bin
+rom: Sport Goofy (1983) (Atari) (Prototype).a52
+rom: Star Raiders (1982) (Atari).bin
+rom: Star Trek - Strategic Operations Simulator (1983) (Sega).a52
+rom: Star Wars - ROTJ - Death Star Battle (1983) (Parker Bros).a52
+rom: Star Wars - The Arcade Game (1983) (Parker Bros).bin
+rom: Stargate (1984) (Atari).a52
+rom: Super Breakout (1982) (Atari).a52
+rom: Super Cobra (1983) (Parker Bros).a52
+rom: Super Pac-Man (1982) (Atari) (Prototype).bin
+rom: Tempest (1983) (Atari) (Prototype) [!].bin
+rom: Track and Field (1984) (Atari).a52
+rom: Vanguard (1983) (Atari).bin
+rom: Wizard of Wor (1982) (CBS).a52
+rom: Xari Arena (1983) (Atari) (Prototype).bin
+rom: Xevious (1984) (Atari) (Prototype).bin
+rom: Yellow Submarine Demo (1982) (Atari) (Prototype).bin
+rom: Zaxxon (1984) (Sega).bin
+rom: Zenji (1984) (Atari).a52
+rom: Zone Ranger (1984) (Activision).a52
+4k cart load 'KABOOM! (1983) (Activision).a52', crc32=0x420F5D0B
+Rom 'KABOOM! (1983) (Activision).a52' loaded OK.
+Executing 2000000000 CPU ticks...
+rom: 5200menu.bin
+rom: Activision Decathlon, The (1984) (Activision).a52
+rom: AE (1984) (Atari) (Prototype).bin
+rom: Asteroids (1983) (Atari) (Prototype) [!].bin
+rom: Astro Chase (1982) (Parker Bros-First Star Software).bin
+rom: Atari Diagnostics V2.3 (1983) (Atari).bin
+rom: Ballblazer (1984) (Atari-Lucasfilm Games).bin
+rom: Barroom Baseball (1983) (Atari) (Prototype).a52
+rom: Battlezone (1983) (Atari) (Prototype).bin
+rom: Beamrider (1984) (Activision).a52
+rom: Berzerk (1983) (Atari).bin
+rom: Berzerk.BIN
+rom: Black Belt (1982) (Atari) (Prototype).bin
+rom: Blaster (Prototype).bin
+rom: Blueprint (1982) (CBS).a52
+rom: Boogie Demo (1982) (Atari) (Prototype).bin
+rom: Bounty Bob Strikes Back (Merged) (Big Five Software) (U).a52
+rom: Buck Rogers - Planet of Zoom (1983) (Sega).bin
+rom: Centipede (1982) (Atari).bin
+rom: Choplifter (1984) (Atari).a52
+rom: Congo Bongo (1983) (Sega).bin
+rom: Countermeasure (1983) (Atari).bin
+rom: Defender (1982) (Atari).a52
+rom: Diagnostic 10.bin
+rom: Diagnostic 11.bin
+rom: Diagnostic 20.bin
+rom: Diagnostic 23.bin
+rom: Dig Dug (1983) (Atari).bin
+rom: Dreadnaught Factor, The (1983) (Atari).a52
+rom: Final Legacy (1982) (Atari) (Prototype).bin
+rom: Frisky Tom (1982) (Atari) (Prototype).bin
+rom: Frogger (1983) (Parker Bros).a52
+rom: Frogger 2 - Threedeep! (1984) (Parker Bros).bin
+rom: galaga_demo.bin
+rom: Galaxian (1982) (Atari).a52
+rom: Galaxian.bin
+rom: Gorf (1982) (CBS).a52
+rom: Gremlins (1984) (Atari).bin
+rom: Gyruss (1982) (Parker Bros).bin
+rom: H.E.R.O. (1984) (Activision).a52
+rom: James Bond 007 (1983) (Parker Bros).bin
+rom: Joust (1984) (Atari).bin
+rom: Jr Pac-Man (1984) (Atari).a52
+rom: Jungle Hunt (1983) (Atari).bin
+rom: K-razy Shoot-Out (1982) (CBS).a52
+rom: KABOOM! (1983) (Activision).a52
+rom: Kangaroo (1982) (Atari).bin
+rom: Keystone Kapers (1984) (Activision).a52
+rom: Last Starfighter, The (1984) (Atari).a52
+rom: Looney Tunes Hotel (1983) (Atari) (Prototype).a52
+rom: Mario Brothers (1983) (Atari).bin
+rom: Meebzork (1983) (Atari).a52
+rom: Megamania (1983) (Activision).a52
+rom: Meteorites (1983) (Electra Concepts).bin
+rom: Microgammon SB (1983) (Atari) (Prototype).a52
+rom: Millipede (1984) (Atari).a52
+rom: Miner 2049 (1983) (Big Five Software).a52
+rom: Miniature Golf (1983) (Atari).a52
+rom: Missile Command (1983) (Atari).a52
+rom: Montezuma's Revenge (1984) (Parker Bros).a52
+rom: Moon Patrol (1983) (Atari).bin
+rom: Mountain King (1984) (Sunrise Software).a52
+rom: Mr. Do's Castle (1984) (Parker Bros).a52
+rom: Ms. Pac-Man (1982) (Atari).bin
+rom: Pac-Man (1982) (Atari).bin
+rom: PAM SALT V1.02 (1982) (Atari).a52
+rom: Pengo (1983) (Atari).bin
+rom: Pete's Diagnostics (1982) (Atari).a52
+rom: Pitfall II - The Lost Caverns (1984) (Activision).a52
+rom: Pitfall II - The Lost Caverns.bin
+rom: Pitfall! (1982) (Activision).a52
+rom: Pole Position (1983) (Atari).bin
+rom: Popeye (1983) (Parker Bros).bin
+rom: Q-bert (1983) (Parker Bros).a52
+rom: QIX (1982) (Atari).a52
+rom: Quest for Quintana Roo (1984) (Sunrise Software).a52
+rom: Realsports Baseball (1983) (Atari).a52
+rom: Realsports Basketball (1983) (Atari).bin
+rom: Realsports Football (1982) (Atari).bin
+rom: Realsports Soccer (1982) (Atari).bin
+rom: Realsports Tennis (1982) (Atari).bin
+rom: Rescue on Fractalus (1984) (Atari-Lucasfilm Games).bin
+rom: River Raid (1983) (Activision).a52
+rom: Roadrunner (1982) (Atari).a52
+rom: Robotron + Millipede.bin
+rom: Robotron 2084 (1983) (Atari).a52
+rom: scramble.bin
+rom: Space Dungeon (1983) (Atari).bin
+rom: Space Invaders (1982) (Atari).a52
+rom: Space Shuttle - A Journey Into Space (1983) (Activision).bin
+rom: spitfire.bin
+rom: Sport Goofy (1983) (Atari) (Prototype).a52
+rom: Star Raiders (1982) (Atari).bin
+rom: Star Trek - Strategic Operations Simulator (1983) (Sega).a52
+rom: Star Wars - ROTJ - Death Star Battle (1983) (Parker Bros).a52
+rom: Star Wars - The Arcade Game (1983) (Parker Bros).bin
+rom: Stargate (1984) (Atari).a52
+rom: Super Breakout (1982) (Atari).a52
+rom: Super Cobra (1983) (Parker Bros).a52
+rom: Super Pac-Man (1982) (Atari) (Prototype).bin
+rom: Tempest (1983) (Atari) (Prototype) [!].bin
+rom: Track and Field (1984) (Atari).a52
+rom: Vanguard (1983) (Atari).bin
+rom: Wizard of Wor (1982) (CBS).a52
+rom: Xari Arena (1983) (Atari) (Prototype).bin
+rom: Xevious (1984) (Atari) (Prototype).bin
+rom: Yellow Submarine Demo (1982) (Atari) (Prototype).bin
+rom: Zaxxon (1984) (Sega).bin
+rom: Zenji (1984) (Atari).a52
+rom: Zone Ranger (1984) (Activision).a52
+Trying to load 'Moon Patrol (1983) (Atari).bin', crc32=0xD0B2F285
+Rom 'Moon Patrol (1983) (Atari).bin' loaded OK.
+Executing 2000000000 CPU ticks...
+rom: 5200menu.bin
+rom: Activision Decathlon, The (1984) (Activision).a52
+rom: AE (1984) (Atari) (Prototype).bin
+rom: Asteroids (1983) (Atari) (Prototype) [!].bin
+rom: Astro Chase (1982) (Parker Bros-First Star Software).bin
+rom: Atari Diagnostics V2.3 (1983) (Atari).bin
+rom: Ballblazer (1984) (Atari-Lucasfilm Games).bin
+rom: Barroom Baseball (1983) (Atari) (Prototype).a52
+rom: Battlezone (1983) (Atari) (Prototype).bin
+rom: Beamrider (1984) (Activision).a52
+rom: Berzerk (1983) (Atari).bin
+rom: Berzerk.BIN
+rom: Black Belt (1982) (Atari) (Prototype).bin
+rom: Blaster (Prototype).bin
+rom: Blueprint (1982) (CBS).a52
+rom: Boogie Demo (1982) (Atari) (Prototype).bin
+rom: Bounty Bob Strikes Back (Merged) (Big Five Software) (U).a52
+rom: Buck Rogers - Planet of Zoom (1983) (Sega).bin
+rom: Centipede (1982) (Atari).bin
+rom: Choplifter (1984) (Atari).a52
+rom: Congo Bongo (1983) (Sega).bin
+rom: Countermeasure (1983) (Atari).bin
+rom: Defender (1982) (Atari).a52
+rom: Diagnostic 10.bin
+rom: Diagnostic 11.bin
+rom: Diagnostic 20.bin
+rom: Diagnostic 23.bin
+rom: Dig Dug (1983) (Atari).bin
+rom: Dreadnaught Factor, The (1983) (Atari).a52
+rom: Final Legacy (1982) (Atari) (Prototype).bin
+rom: Frisky Tom (1982) (Atari) (Prototype).bin
+rom: Frogger (1983) (Parker Bros).a52
+rom: Frogger 2 - Threedeep! (1984) (Parker Bros).bin
+rom: galaga_demo.bin
+rom: Galaxian (1982) (Atari).a52
+rom: Galaxian.bin
+rom: Gorf (1982) (CBS).a52
+rom: Gremlins (1984) (Atari).bin
+rom: Gyruss (1982) (Parker Bros).bin
+rom: H.E.R.O. (1984) (Activision).a52
+rom: James Bond 007 (1983) (Parker Bros).bin
+rom: Joust (1984) (Atari).bin
+rom: Jr Pac-Man (1984) (Atari).a52
+rom: Jungle Hunt (1983) (Atari).bin
+rom: K-razy Shoot-Out (1982) (CBS).a52
+rom: KABOOM! (1983) (Activision).a52
+rom: Kangaroo (1982) (Atari).bin
+rom: Keystone Kapers (1984) (Activision).a52
+rom: Last Starfighter, The (1984) (Atari).a52
+rom: Looney Tunes Hotel (1983) (Atari) (Prototype).a52
+rom: Mario Brothers (1983) (Atari).bin
+rom: Meebzork (1983) (Atari).a52
+rom: Megamania (1983) (Activision).a52
+rom: Meteorites (1983) (Electra Concepts).bin
+rom: Microgammon SB (1983) (Atari) (Prototype).a52
+rom: Millipede (1984) (Atari).a52
+rom: Miner 2049 (1983) (Big Five Software).a52
+rom: Miniature Golf (1983) (Atari).a52
+rom: Missile Command (1983) (Atari).a52
+rom: Montezuma's Revenge (1984) (Parker Bros).a52
+rom: Moon Patrol (1983) (Atari).bin
+rom: Mountain King (1984) (Sunrise Software).a52
+rom: Mr. Do's Castle (1984) (Parker Bros).a52
+rom: Ms. Pac-Man (1982) (Atari).bin
+rom: Pac-Man (1982) (Atari).bin
+rom: PAM SALT V1.02 (1982) (Atari).a52
+rom: Pengo (1983) (Atari).bin
+rom: Pete's Diagnostics (1982) (Atari).a52
+rom: Pitfall II - The Lost Caverns (1984) (Activision).a52
+rom: Pitfall II - The Lost Caverns.bin
+rom: Pitfall! (1982) (Activision).a52
+rom: Pole Position (1983) (Atari).bin
+rom: Popeye (1983) (Parker Bros).bin
+rom: Q-bert (1983) (Parker Bros).a52
+rom: QIX (1982) (Atari).a52
+rom: Quest for Quintana Roo (1984) (Sunrise Software).a52
+rom: Realsports Baseball (1983) (Atari).a52
+rom: Realsports Basketball (1983) (Atari).bin
+rom: Realsports Football (1982) (Atari).bin
+rom: Realsports Soccer (1982) (Atari).bin
+rom: Realsports Tennis (1982) (Atari).bin
+rom: Rescue on Fractalus (1984) (Atari-Lucasfilm Games).bin
+rom: River Raid (1983) (Activision).a52
+rom: Roadrunner (1982) (Atari).a52
+rom: Robotron + Millipede.bin
+rom: Robotron 2084 (1983) (Atari).a52
+rom: scramble.bin
+rom: Space Dungeon (1983) (Atari).bin
+rom: Space Invaders (1982) (Atari).a52
+rom: Space Shuttle - A Journey Into Space (1983) (Activision).bin
+rom: spitfire.bin
+rom: Sport Goofy (1983) (Atari) (Prototype).a52
+rom: Star Raiders (1982) (Atari).bin
+rom: Star Trek - Strategic Operations Simulator (1983) (Sega).a52
+rom: Star Wars - ROTJ - Death Star Battle (1983) (Parker Bros).a52
+rom: Star Wars - The Arcade Game (1983) (Parker Bros).bin
+rom: Stargate (1984) (Atari).a52
+rom: Super Breakout (1982) (Atari).a52
+rom: Super Cobra (1983) (Parker Bros).a52
+rom: Super Pac-Man (1982) (Atari) (Prototype).bin
+rom: Tempest (1983) (Atari) (Prototype) [!].bin
+rom: Track and Field (1984) (Atari).a52
+rom: Vanguard (1983) (Atari).bin
+rom: Wizard of Wor (1982) (CBS).a52
+rom: Xari Arena (1983) (Atari) (Prototype).bin
+rom: Xevious (1984) (Atari) (Prototype).bin
+rom: Yellow Submarine Demo (1982) (Atari) (Prototype).bin
+rom: Zaxxon (1984) (Sega).bin
+rom: Zenji (1984) (Atari).a52
+rom: Zone Ranger (1984) (Activision).a52
+Trying to load 'Quest for Quintana Roo (1984) (Sunrise Software).a52', crc32=0xB5F3402B
+Rom 'Quest for Quintana Roo (1984) (Sunrise Software).a52' loaded OK.
+Executing 2000000000 CPU ticks...
+rom: 5200menu.bin
+rom: Activision Decathlon, The (1984) (Activision).a52
+rom: AE (1984) (Atari) (Prototype).bin
+rom: Asteroids (1983) (Atari) (Prototype) [!].bin
+rom: Astro Chase (1982) (Parker Bros-First Star Software).bin
+rom: Atari Diagnostics V2.3 (1983) (Atari).bin
+rom: Ballblazer (1984) (Atari-Lucasfilm Games).bin
+rom: Barroom Baseball (1983) (Atari) (Prototype).a52
+rom: Battlezone (1983) (Atari) (Prototype).bin
+rom: Beamrider (1984) (Activision).a52
+rom: Berzerk (1983) (Atari).bin
+rom: Berzerk.BIN
+rom: Black Belt (1982) (Atari) (Prototype).bin
+rom: Blaster (Prototype).bin
+rom: Blueprint (1982) (CBS).a52
+rom: Boogie Demo (1982) (Atari) (Prototype).bin
+rom: Bounty Bob Strikes Back (Merged) (Big Five Software) (U).a52
+rom: Buck Rogers - Planet of Zoom (1983) (Sega).bin
+rom: Centipede (1982) (Atari).bin
+rom: Choplifter (1984) (Atari).a52
+rom: Congo Bongo (1983) (Sega).bin
+rom: Countermeasure (1983) (Atari).bin
+rom: Defender (1982) (Atari).a52
+rom: Diagnostic 10.bin
+rom: Diagnostic 11.bin
+rom: Diagnostic 20.bin
+rom: Diagnostic 23.bin
+rom: Dig Dug (1983) (Atari).bin
+rom: Dreadnaught Factor, The (1983) (Atari).a52
+rom: Final Legacy (1982) (Atari) (Prototype).bin
+rom: Frisky Tom (1982) (Atari) (Prototype).bin
+rom: Frogger (1983) (Parker Bros).a52
+rom: Frogger 2 - Threedeep! (1984) (Parker Bros).bin
+rom: galaga_demo.bin
+rom: Galaxian (1982) (Atari).a52
+rom: Galaxian.bin
+rom: Gorf (1982) (CBS).a52
+rom: Gremlins (1984) (Atari).bin
+rom: Gyruss (1982) (Parker Bros).bin
+rom: H.E.R.O. (1984) (Activision).a52
+rom: James Bond 007 (1983) (Parker Bros).bin
+rom: Joust (1984) (Atari).bin
+rom: Jr Pac-Man (1984) (Atari).a52
+rom: Jungle Hunt (1983) (Atari).bin
+rom: K-razy Shoot-Out (1982) (CBS).a52
+rom: KABOOM! (1983) (Activision).a52
+rom: Kangaroo (1982) (Atari).bin
+rom: Keystone Kapers (1984) (Activision).a52
+rom: Last Starfighter, The (1984) (Atari).a52
+rom: Looney Tunes Hotel (1983) (Atari) (Prototype).a52
+rom: Mario Brothers (1983) (Atari).bin
+rom: Meebzork (1983) (Atari).a52
+rom: Megamania (1983) (Activision).a52
+rom: Meteorites (1983) (Electra Concepts).bin
+rom: Microgammon SB (1983) (Atari) (Prototype).a52
+rom: Millipede (1984) (Atari).a52
+rom: Miner 2049 (1983) (Big Five Software).a52
+rom: Miniature Golf (1983) (Atari).a52
+rom: Missile Command (1983) (Atari).a52
+rom: Montezuma's Revenge (1984) (Parker Bros).a52
+rom: Moon Patrol (1983) (Atari).bin
+rom: Mountain King (1984) (Sunrise Software).a52
+rom: Mr. Do's Castle (1984) (Parker Bros).a52
+rom: Ms. Pac-Man (1982) (Atari).bin
+rom: Pac-Man (1982) (Atari).bin
+rom: PAM SALT V1.02 (1982) (Atari).a52
+rom: Pengo (1983) (Atari).bin
+rom: Pete's Diagnostics (1982) (Atari).a52
+rom: Pitfall II - The Lost Caverns (1984) (Activision).a52
+rom: Pitfall II - The Lost Caverns.bin
+rom: Pitfall! (1982) (Activision).a52
+rom: Pole Position (1983) (Atari).bin
+rom: Popeye (1983) (Parker Bros).bin
+rom: Q-bert (1983) (Parker Bros).a52
+rom: QIX (1982) (Atari).a52
+rom: Quest for Quintana Roo (1984) (Sunrise Software).a52
+rom: Realsports Baseball (1983) (Atari).a52
+rom: Realsports Basketball (1983) (Atari).bin
+rom: Realsports Football (1982) (Atari).bin
+rom: Realsports Soccer (1982) (Atari).bin
+rom: Realsports Tennis (1982) (Atari).bin
+rom: Rescue on Fractalus (1984) (Atari-Lucasfilm Games).bin
+rom: River Raid (1983) (Activision).a52
+rom: Roadrunner (1982) (Atari).a52
+rom: Robotron + Millipede.bin
+rom: Robotron 2084 (1983) (Atari).a52
+rom: scramble.bin
+rom: Space Dungeon (1983) (Atari).bin
+rom: Space Invaders (1982) (Atari).a52
+rom: Space Shuttle - A Journey Into Space (1983) (Activision).bin
+rom: spitfire.bin
+rom: Sport Goofy (1983) (Atari) (Prototype).a52
+rom: Star Raiders (1982) (Atari).bin
+rom: Star Trek - Strategic Operations Simulator (1983) (Sega).a52
+rom: Star Wars - ROTJ - Death Star Battle (1983) (Parker Bros).a52
+rom: Star Wars - The Arcade Game (1983) (Parker Bros).bin
+rom: Stargate (1984) (Atari).a52
+rom: Super Breakout (1982) (Atari).a52
+rom: Super Cobra (1983) (Parker Bros).a52
+rom: Super Pac-Man (1982) (Atari) (Prototype).bin
+rom: Tempest (1983) (Atari) (Prototype) [!].bin
+rom: Track and Field (1984) (Atari).a52
+rom: Vanguard (1983) (Atari).bin
+rom: Wizard of Wor (1982) (CBS).a52
+rom: Xari Arena (1983) (Atari) (Prototype).bin
+rom: Xevious (1984) (Atari) (Prototype).bin
+rom: Yellow Submarine Demo (1982) (Atari) (Prototype).bin
+rom: Zaxxon (1984) (Sega).bin
+rom: Zenji (1984) (Atari).a52
+rom: Zone Ranger (1984) (Activision).a52
+Trying to load 'Rescue on Fractalus (1984) (Atari-Lucasfilm Games).bin', crc32=0x762C591B
+Rom 'Rescue on Fractalus (1984) (Atari-Lucasfilm Games).bin' loaded OK.
+Executing 2000000000 CPU ticks...
+rom: 5200menu.bin
+rom: Activision Decathlon, The (1984) (Activision).a52
+rom: AE (1984) (Atari) (Prototype).bin
+rom: Asteroids (1983) (Atari) (Prototype) [!].bin
+rom: Astro Chase (1982) (Parker Bros-First Star Software).bin
+rom: Atari Diagnostics V2.3 (1983) (Atari).bin
+rom: Ballblazer (1984) (Atari-Lucasfilm Games).bin
+rom: Barroom Baseball (1983) (Atari) (Prototype).a52
+rom: Battlezone (1983) (Atari) (Prototype).bin
+rom: Beamrider (1984) (Activision).a52
+rom: Berzerk (1983) (Atari).bin
+rom: Berzerk.BIN
+rom: Black Belt (1982) (Atari) (Prototype).bin
+rom: Blaster (Prototype).bin
+rom: Blueprint (1982) (CBS).a52
+rom: Boogie Demo (1982) (Atari) (Prototype).bin
+rom: Bounty Bob Strikes Back (Merged) (Big Five Software) (U).a52
+rom: Buck Rogers - Planet of Zoom (1983) (Sega).bin
+rom: Centipede (1982) (Atari).bin
+rom: Choplifter (1984) (Atari).a52
+rom: Congo Bongo (1983) (Sega).bin
+rom: Countermeasure (1983) (Atari).bin
+rom: Defender (1982) (Atari).a52
+rom: Diagnostic 10.bin
+rom: Diagnostic 11.bin
+rom: Diagnostic 20.bin
+rom: Diagnostic 23.bin
+rom: Dig Dug (1983) (Atari).bin
+rom: Dreadnaught Factor, The (1983) (Atari).a52
+rom: Final Legacy (1982) (Atari) (Prototype).bin
+rom: Frisky Tom (1982) (Atari) (Prototype).bin
+rom: Frogger (1983) (Parker Bros).a52
+rom: Frogger 2 - Threedeep! (1984) (Parker Bros).bin
+rom: galaga_demo.bin
+rom: Galaxian (1982) (Atari).a52
+rom: Galaxian.bin
+rom: Gorf (1982) (CBS).a52
+rom: Gremlins (1984) (Atari).bin
+rom: Gyruss (1982) (Parker Bros).bin
+rom: H.E.R.O. (1984) (Activision).a52
+rom: James Bond 007 (1983) (Parker Bros).bin
+rom: Joust (1984) (Atari).bin
+rom: Jr Pac-Man (1984) (Atari).a52
+rom: Jungle Hunt (1983) (Atari).bin
+rom: K-razy Shoot-Out (1982) (CBS).a52
+rom: KABOOM! (1983) (Activision).a52
+rom: Kangaroo (1982) (Atari).bin
+rom: Keystone Kapers (1984) (Activision).a52
+rom: Last Starfighter, The (1984) (Atari).a52
+rom: Looney Tunes Hotel (1983) (Atari) (Prototype).a52
+rom: Mario Brothers (1983) (Atari).bin
+rom: Meebzork (1983) (Atari).a52
+rom: Megamania (1983) (Activision).a52
+rom: Meteorites (1983) (Electra Concepts).bin
+rom: Microgammon SB (1983) (Atari) (Prototype).a52
+rom: Millipede (1984) (Atari).a52
+rom: Miner 2049 (1983) (Big Five Software).a52
+rom: Miniature Golf (1983) (Atari).a52
+rom: Missile Command (1983) (Atari).a52
+rom: Montezuma's Revenge (1984) (Parker Bros).a52
+rom: Moon Patrol (1983) (Atari).bin
+rom: Mountain King (1984) (Sunrise Software).a52
+rom: Mr. Do's Castle (1984) (Parker Bros).a52
+rom: Ms. Pac-Man (1982) (Atari).bin
+rom: Pac-Man (1982) (Atari).bin
+rom: PAM SALT V1.02 (1982) (Atari).a52
+rom: Pengo (1983) (Atari).bin
+rom: Pete's Diagnostics (1982) (Atari).a52
+rom: Pitfall II - The Lost Caverns (1984) (Activision).a52
+rom: Pitfall II - The Lost Caverns.bin
+rom: Pitfall! (1982) (Activision).a52
+rom: Pole Position (1983) (Atari).bin
+rom: Popeye (1983) (Parker Bros).bin
+rom: Q-bert (1983) (Parker Bros).a52
+rom: QIX (1982) (Atari).a52
+rom: Quest for Quintana Roo (1984) (Sunrise Software).a52
+rom: Realsports Baseball (1983) (Atari).a52
+rom: Realsports Basketball (1983) (Atari).bin
+rom: Realsports Football (1982) (Atari).bin
+rom: Realsports Soccer (1982) (Atari).bin
+rom: Realsports Tennis (1982) (Atari).bin
+rom: Rescue on Fractalus (1984) (Atari-Lucasfilm Games).bin
+rom: River Raid (1983) (Activision).a52
+rom: Roadrunner (1982) (Atari).a52
+rom: Robotron + Millipede.bin
+rom: Robotron 2084 (1983) (Atari).a52
+rom: scramble.bin
+rom: Space Dungeon (1983) (Atari).bin
+rom: Space Invaders (1982) (Atari).a52
+rom: Space Shuttle - A Journey Into Space (1983) (Activision).bin
+rom: spitfire.bin
+rom: Sport Goofy (1983) (Atari) (Prototype).a52
+rom: Star Raiders (1982) (Atari).bin
+rom: Star Trek - Strategic Operations Simulator (1983) (Sega).a52
+rom: Star Wars - ROTJ - Death Star Battle (1983) (Parker Bros).a52
+rom: Star Wars - The Arcade Game (1983) (Parker Bros).bin
+rom: Stargate (1984) (Atari).a52
+rom: Super Breakout (1982) (Atari).a52
+rom: Super Cobra (1983) (Parker Bros).a52
+rom: Super Pac-Man (1982) (Atari) (Prototype).bin
+rom: Tempest (1983) (Atari) (Prototype) [!].bin
+rom: Track and Field (1984) (Atari).a52
+rom: Vanguard (1983) (Atari).bin
+rom: Wizard of Wor (1982) (CBS).a52
+rom: Xari Arena (1983) (Atari) (Prototype).bin
+rom: Xevious (1984) (Atari) (Prototype).bin
+rom: Yellow Submarine Demo (1982) (Atari) (Prototype).bin
+rom: Zaxxon (1984) (Sega).bin
+rom: Zenji (1984) (Atari).a52
+rom: Zone Ranger (1984) (Activision).a52
+Trying to load 'Space Shuttle - A Journey Into Space (1983) (Activision).bin', crc32=0x387365DC
+Rom 'Space Shuttle - A Journey Into Space (1983) (Activision).bin' loaded OK.
+Executing 2000000000 CPU ticks...
+rom: 5200menu.bin
+rom: Activision Decathlon, The (1984) (Activision).a52
+rom: AE (1984) (Atari) (Prototype).bin
+rom: Asteroids (1983) (Atari) (Prototype) [!].bin
+rom: Astro Chase (1982) (Parker Bros-First Star Software).bin
+rom: Atari Diagnostics V2.3 (1983) (Atari).bin
+rom: Ballblazer (1984) (Atari-Lucasfilm Games).bin
+rom: Barroom Baseball (1983) (Atari) (Prototype).a52
+rom: Battlezone (1983) (Atari) (Prototype).bin
+rom: Beamrider (1984) (Activision).a52
+rom: Berzerk (1983) (Atari).bin
+rom: Berzerk.BIN
+rom: Black Belt (1982) (Atari) (Prototype).bin
+rom: Blaster (Prototype).bin
+rom: Blueprint (1982) (CBS).a52
+rom: Boogie Demo (1982) (Atari) (Prototype).bin
+rom: Bounty Bob Strikes Back (Merged) (Big Five Software) (U).a52
+rom: Buck Rogers - Planet of Zoom (1983) (Sega).bin
+rom: Centipede (1982) (Atari).bin
+rom: Choplifter (1984) (Atari).a52
+rom: Congo Bongo (1983) (Sega).bin
+rom: Countermeasure (1983) (Atari).bin
+rom: Defender (1982) (Atari).a52
+rom: Diagnostic 10.bin
+rom: Diagnostic 11.bin
+rom: Diagnostic 20.bin
+rom: Diagnostic 23.bin
+rom: Dig Dug (1983) (Atari).bin
+rom: Dreadnaught Factor, The (1983) (Atari).a52
+rom: Final Legacy (1982) (Atari) (Prototype).bin
+rom: Frisky Tom (1982) (Atari) (Prototype).bin
+rom: Frogger (1983) (Parker Bros).a52
+rom: Frogger 2 - Threedeep! (1984) (Parker Bros).bin
+rom: galaga_demo.bin
+rom: Galaxian (1982) (Atari).a52
+rom: Galaxian.bin
+rom: Gorf (1982) (CBS).a52
+rom: Gremlins (1984) (Atari).bin
+rom: Gyruss (1982) (Parker Bros).bin
+rom: H.E.R.O. (1984) (Activision).a52
+rom: James Bond 007 (1983) (Parker Bros).bin
+rom: Joust (1984) (Atari).bin
+rom: Jr Pac-Man (1984) (Atari).a52
+rom: Jungle Hunt (1983) (Atari).bin
+rom: K-razy Shoot-Out (1982) (CBS).a52
+rom: KABOOM! (1983) (Activision).a52
+rom: Kangaroo (1982) (Atari).bin
+rom: Keystone Kapers (1984) (Activision).a52
+rom: Last Starfighter, The (1984) (Atari).a52
+rom: Looney Tunes Hotel (1983) (Atari) (Prototype).a52
+rom: Mario Brothers (1983) (Atari).bin
+rom: Meebzork (1983) (Atari).a52
+rom: Megamania (1983) (Activision).a52
+rom: Meteorites (1983) (Electra Concepts).bin
+rom: Microgammon SB (1983) (Atari) (Prototype).a52
+rom: Millipede (1984) (Atari).a52
+rom: Miner 2049 (1983) (Big Five Software).a52
+rom: Miniature Golf (1983) (Atari).a52
+rom: Missile Command (1983) (Atari).a52
+rom: Montezuma's Revenge (1984) (Parker Bros).a52
+rom: Moon Patrol (1983) (Atari).bin
+rom: Mountain King (1984) (Sunrise Software).a52
+rom: Mr. Do's Castle (1984) (Parker Bros).a52
+rom: Ms. Pac-Man (1982) (Atari).bin
+rom: Pac-Man (1982) (Atari).bin
+rom: PAM SALT V1.02 (1982) (Atari).a52
+rom: Pengo (1983) (Atari).bin
+rom: Pete's Diagnostics (1982) (Atari).a52
+rom: Pitfall II - The Lost Caverns (1984) (Activision).a52
+rom: Pitfall II - The Lost Caverns.bin
+rom: Pitfall! (1982) (Activision).a52
+rom: Pole Position (1983) (Atari).bin
+rom: Popeye (1983) (Parker Bros).bin
+rom: Q-bert (1983) (Parker Bros).a52
+rom: QIX (1982) (Atari).a52
+rom: Quest for Quintana Roo (1984) (Sunrise Software).a52
+rom: Realsports Baseball (1983) (Atari).a52
+rom: Realsports Basketball (1983) (Atari).bin
+rom: Realsports Football (1982) (Atari).bin
+rom: Realsports Soccer (1982) (Atari).bin
+rom: Realsports Tennis (1982) (Atari).bin
+rom: Rescue on Fractalus (1984) (Atari-Lucasfilm Games).bin
+rom: River Raid (1983) (Activision).a52
+rom: Roadrunner (1982) (Atari).a52
+rom: Robotron + Millipede.bin
+rom: Robotron 2084 (1983) (Atari).a52
+rom: scramble.bin
+rom: Space Dungeon (1983) (Atari).bin
+rom: Space Invaders (1982) (Atari).a52
+rom: Space Shuttle - A Journey Into Space (1983) (Activision).bin
+rom: spitfire.bin
+rom: Sport Goofy (1983) (Atari) (Prototype).a52
+rom: Star Raiders (1982) (Atari).bin
+rom: Star Trek - Strategic Operations Simulator (1983) (Sega).a52
+rom: Star Wars - ROTJ - Death Star Battle (1983) (Parker Bros).a52
+rom: Star Wars - The Arcade Game (1983) (Parker Bros).bin
+rom: Stargate (1984) (Atari).a52
+rom: Super Breakout (1982) (Atari).a52
+rom: Super Cobra (1983) (Parker Bros).a52
+rom: Super Pac-Man (1982) (Atari) (Prototype).bin
+rom: Tempest (1983) (Atari) (Prototype) [!].bin
+rom: Track and Field (1984) (Atari).a52
+rom: Vanguard (1983) (Atari).bin
+rom: Wizard of Wor (1982) (CBS).a52
+rom: Xari Arena (1983) (Atari) (Prototype).bin
+rom: Xevious (1984) (Atari) (Prototype).bin
+rom: Yellow Submarine Demo (1982) (Atari) (Prototype).bin
+rom: Zaxxon (1984) (Sega).bin
+rom: Zenji (1984) (Atari).a52
+rom: Zone Ranger (1984) (Activision).a52
+Trying to load 'Wizard of Wor (1982) (CBS).a52', crc32=0xD6F7DDFD
+Rom 'Wizard of Wor (1982) (CBS).a52' loaded OK.
+Executing 2000000000 CPU ticks...
 Executing 2000000000 CPU ticks...
